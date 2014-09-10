@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Jogo da Velha com HTML, CSS e JavaScript"/>
+
+    <title>Jogo da Velha :D</title>
+    <link href='http://fonts.googleapis.com/css?family=Lilita+One' rel='stylesheet' type='text/css'/> <!-- font da google -->
+    <link  type="text/css" rel="stylesheet" href="{{ STATIC_URL }}css/style.css"/>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/script.js"></script>
+  </head>
+
+  <body style="background:url({{ STATIC_URL }}img/fundo.png);">
+  <br/>
+
+  <!-- inicio do jogo da velha -->
+  <center>
+        <h1 style="font-family: 'Lilita One', cursive;"> JOGO DA  <b>VELHA</b>  </h1>
+          <p>  
+          <div id="msg">Inicio do jogo com: </div><b style="color:red;font-size: 40px;font-family: 'Lilita One', cursive;" id="inicio"> X</b> 
+          </p><br/>
+
+        <table style="text-shadow: 3px 3px 5px white;">
+          <tr>
+            <th colspan="3" id="X" style="font-family: 'Lilita One', cursive; font-size: 30px;">VOCÊ: 0</th>
+          </tr>
+              <tr>
+              <!-- this.id está passando o valor do id nesse caso quadro_1 -->
+                <td onclick="jogo_da_velha(this.id);jogador();" id="quadro_1"></td> 
+                <td onclick="jogo_da_velha(this.id);jogador();" id="quadro_2"></td>
+                <td onclick="jogo_da_velha(this.id);jogador();" id="quadro_3"></td>
+              </tr>
+               
+              <tr>
+                <td onclick="jogo_da_velha(this.id);jogador();" id="quadro_4"></td>
+                <td onclick="jogo_da_velha(this.id);jogador();" id="quadro_5"></td>
+                <td onclick="jogo_da_velha(this.id);jogador();" id="quadro_6"></td>
+              </tr>
+               
+              <tr>
+                <td onclick="jogo_da_velha(this.id);jogador();" id="quadro_7"></td>
+                <td onclick="jogo_da_velha(this.id);jogador();" id="quadro_8"></td>
+                <td onclick="jogo_da_velha(this.id);jogador();" id="quadro_9"></td>
+              </tr>
+          <tr>
+            <th colspan="3" id="O" style="font-family: 'Lilita One', cursive;font-size: 30px;">COMPUTADOR: 0</th>
+          </tr>
+        </table>
+  </center>
+        <div style="font-family: 'Lilita One', cursive;" id="vencedor"></div>
+
+        <button type="button" style="font-family: 'Lilita One', cursive; " id="limparcampos" onclick="limparcampos()"> Boa Sorte </button>
+
+        <div id="teste"></div>
+  </body>
+</html>

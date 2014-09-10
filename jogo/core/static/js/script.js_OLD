@@ -1,0 +1,207 @@
+x = 0; // iniciando placar
+o = 0;// iniciando placar
+inicioJogo = "X"; // inicia o jogo com 'X'
+jogoOLD = 0;
+vencedorWin = 0;
+venceu_ou_nao = 0; // vai receber se ouve ganhador na primeira rodada
+
+// limpando os quadros
+// atribuindo valores vazios dentro de cada quadro
+
+var nomeQuadro = 'quadro_';
+
+function limparcampos(){
+  jogoOLD = 0; // zerando jogo anterior
+  vencedorWin = 0; // zerando vencedor anterior
+  document.getElementById("vencedor").style.visibility="hidden";
+  
+  // limpando dados de cada quadrado, valores e o background
+  for ( var i=1; i<10; i++ ){
+        document.getElementById((nomeQuadro + i)).innerHTML = "";
+        document.getElementById((nomeQuadro + i)).style.background="black";
+  }
+  
+  // serve para a primeira jogada, alterando a div, para o "proximo jogador"
+  if ( venceu_ou_nao == 1 ) {
+       document.getElementById('msg').innerHTML = "Proximo jogador: ";
+  }
+}
+vendecorWin = 0;
+// recebendo o ganhador, X ou O
+function vencedor(vencedor){
+  // concatenando uma fraze para jogar dentro de uma DIV, la no HTML 
+  // cujo id é "vencedor"
+  document.getElementById('vencedor').innerHTML = " Jogador " + vencedor + " Venceu!";
+  document.getElementById("limparcampos").innerHTML= " Novo Jogo ";
+
+  //mostra a div dizendo quem foi o vencedor
+  document.getElementById("vencedor").style.visibility="visible";
+
+  vencedorWin = 1;
+  // verifica um Id chamado "inicio", é um ponto que avisa os jogadores, de quem é a vez de começar ou recomeçar
+  if ( vencedor == "O" ) {
+      document.getElementById('inicio').innerHTML = "X";
+  }
+  else{
+      document.getElementById('inicio').innerHTML = "O";
+  }
+  venceu_ou_nao = 1;
+}
+
+function velha(obj){ 
+    
+    proximoJogador(obj);
+    // começa com "X"
+
+    // aqui, se o inicioJogo for diferente de X, quer dizer que ele está como "O"
+    //pense como se fosse no segundo click do jogador, ele vai clicar e vai aparecer o X
+    //depois vai o inicioJogo, vai terque estar com "O" para que na linha 35 ele joga o "O" dentro do quadro que foi clicado
+    // então esse if trata se o inicioJogo está com X ou O e atribui o valor ao contrário, para que no 
+    // próximo click ele esteja com valor diferente do anterior
+
+
+    quadro1 = document.getElementById("quadro_1").innerHTML;
+    quadro2 = document.getElementById("quadro_2").innerHTML;
+    quadro3 = document.getElementById("quadro_3").innerHTML;
+    quadro4 = document.getElementById("quadro_4").innerHTML;
+    quadro5 = document.getElementById("quadro_5").innerHTML;
+    quadro6 = document.getElementById("quadro_6").innerHTML;
+    quadro7 = document.getElementById("quadro_7").innerHTML;
+    quadro8 = document.getElementById("quadro_8").innerHTML;
+    quadro9 = document.getElementById("quadro_9").innerHTML;
+
+
+   // Verificando se o jogo foi ganho
+   if ((( quadro1 != '') && (quadro2 != '') 
+                    && (quadro3 != '') && (quadro1 == quadro2) 
+                    && (quadro2 == quadro3)) || ((quadro1 != '') 
+                    && (quadro5 != '') && (quadro9 != '') 
+                    && (quadro1 == quadro5) && (quadro5 == quadro9)) 
+                    || ((quadro1 != '') && (quadro4 != '') 
+                    && (quadro7 != '') && (quadro1 == quadro4) 
+                    && (quadro4 == quadro7)) || ((quadro4 != '') 
+                    && (quadro5 != '') && (quadro6 != '') 
+                    && (quadro4 == quadro5) && (quadro5 == quadro6)) 
+                    || ((quadro7 != '') && (quadro8 != '') 
+                    && (quadro9 != '') && (quadro7 == quadro8) 
+                    && (quadro8 == quadro9)) || ((quadro2 != '') 
+                    && (quadro5 != '') && (quadro8 != '') 
+                    && (quadro2 == quadro5) && (quadro5 == quadro8)) 
+                    || ((quadro3 != '') && (quadro6 != '') 
+                    && (quadro9 != '') && (quadro3 == quadro6) 
+                    && (quadro6 == quadro9)) || ((quadro7 != '') 
+                    && (quadro5 != '') && (quadro3 != '') 
+                    && (quadro7 == quadro5) && (quadro5 == quadro3))){
+        
+        vencedorWin = 1;
+        placar();
+   }
+    nenhumVencedor();
+    
+} 
+function proximoJogador(obj){
+  idQuadro = obj;
+  // na linha de baixo esta recebendo o valor de X ou O, (pois é esse campo que o jogador clicou)
+  
+  quadroClicado = document.getElementById(idQuadro).innerHTML;
+  if ( quadroClicado == '' && vencedorWin == 0 ) {
+      document.getElementById(idQuadro).innerHTML = inicioJogo; // inicio do jogo "X"
+      
+      if ( inicioJogo != "X" ){
+           inicioJogo = "X";
+      }
+      else{
+          inicioJogo = "O";
+      }      
+  }
+}
+
+// verificando se não houve um vencedor
+function nenhumVencedor(){
+  if ( quadro1 != ''
+               && quadro2 != '' 
+               && quadro3 != '' 
+               && quadro4 != '' 
+               && quadro5 != '' 
+               && quadro6 != '' 
+               && quadro7 != ''
+               && quadro8 != ''
+               && quadro9 != ''
+               && vencedorWin != 1) {
+        //escrevendo que ninguem venceu na div
+        document.getElementById('vencedor').innerHTML = " Ninguém Venceu !!!";
+        document.getElementById("limparcampos").innerHTML= " Novo Jogo ";
+
+        //mostra a div dizendo que ninguem venceu
+        document.getElementById("vencedor").style.visibility="visible";
+
+        vencedorWin = 1;
+        venceu_ou_nao = 1;
+  }
+  
+}
+
+function placar(){
+  // aqui trata quem realmente ganhou, se o inicioJogo, ele vai estár com um valor anterior do
+  //último click, porque o último clica não é tratado, então logo o último click é o vencedor.
+  if ( jogoOLD == 0 ) { // esse if é para tratar se já houve vencedor
+        if ( inicioJogo == "O") {
+              document.getElementById('X').innerHTML = "Jogador X: <h3>" + (++x) + "</h3>";
+              vencedor("X"); // chama a função passando o ganhador
+              reta();
+              jogoOLD = 1;
+        }
+        else{
+              document.getElementById('O').innerHTML = "Jogador O: <h3>" + (++o) + "</h3>";
+              vencedor("O");   // chama a função passando o ganhador                  
+              reta();
+              jogoOLD = 1;
+        }
+  }
+  
+}
+// mudando background ao vencer
+function reta(){
+
+   if ( quadro1 == quadro5 && quadro5 == quadro9 && quadro1 != '' ) { // -> \
+        document.getElementById('quadro_9').style.background="rgb(196, 0, 0)";
+        document.getElementById('quadro_1').style.background="rgb(196, 0, 0)";
+        document.getElementById('quadro_5').style.background="rgb(196, 0, 0)";
+   }
+   if ( quadro3 == quadro5 && quadro5 == quadro7 && quadro3 != '' ) { // -> /
+        document.getElementById('quadro_3').style.background="rgb(196, 0, 0)";
+        document.getElementById('quadro_5').style.background="rgb(196, 0, 0)";
+        document.getElementById('quadro_7').style.background="rgb(196, 0, 0)";
+   }
+   if ( quadro1 == quadro4 && quadro4 == quadro7 && quadro1 != '' ) { // -> |
+        document.getElementById('quadro_1').style.background="rgb(196, 0, 0)";
+        document.getElementById('quadro_4').style.background="rgb(196, 0, 0)";
+        document.getElementById('quadro_7').style.background="rgb(196, 0, 0)";
+   }
+   if ( quadro2 == quadro5 && quadro5 == quadro8 && quadro5 != '' ) { //-> ||
+        document.getElementById('quadro_2').style.background="rgb(196, 0, 0)";
+        document.getElementById('quadro_5').style.background="rgb(196, 0, 0)";
+        document.getElementById('quadro_8').style.background="rgb(196, 0, 0)";
+   }
+   if ( quadro3 == quadro6 && quadro6 == quadro9 && quadro3 != '' ) { // -> |||
+        document.getElementById('quadro_3').style.background="rgb(196, 0, 0)";
+        document.getElementById('quadro_6').style.background="rgb(196, 0, 0)";
+        document.getElementById('quadro_9').style.background="rgb(196, 0, 0)";
+   }
+   if ( quadro1 == quadro2 && quadro2 == quadro3 && quadro1 != '' ) { // -> ---
+        document.getElementById('quadro_2').style.background="rgb(196, 0, 0)";
+        document.getElementById('quadro_1').style.background="rgb(196, 0, 0)";
+        document.getElementById('quadro_3').style.background="rgb(196, 0, 0)";
+   }
+   if ( quadro4 == quadro5 && quadro5 == quadro6 && quadro5 != '' ) { // -> --- ---
+        document.getElementById('quadro_6').style.background="rgb(196, 0, 0)";
+        document.getElementById('quadro_5').style.background="rgb(196, 0, 0)";
+        document.getElementById('quadro_4').style.background="rgb(196, 0, 0)";
+   }
+   if ( quadro7 == quadro8 && quadro8 == quadro9 && quadro7 != '' ) { // -> --- --- ---
+        document.getElementById('quadro_9').style.background="rgb(196, 0, 0)";
+        document.getElementById('quadro_8').style.background="rgb(196, 0, 0)";
+        document.getElementById('quadro_7').style.background="rgb(196, 0, 0)";
+   }
+   
+}
