@@ -8,4 +8,3 @@ django-decouple==2.1
 pytz
 south==0.8.4
 bootstrap-admin==0.3.0
-
