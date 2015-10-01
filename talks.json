@@ -1,0 +1,86 @@
+[
+	{
+        "title": "Credencimaneto",
+        "description": "",
+        "clock": "8:00",
+        "speaker": ""
+    },
+    {
+        "title": "Abertura",
+        "description": "",
+        "clock": "8:40",
+        "speaker": ""
+    },
+    {
+        "title": "Conhecendo Go! lang",
+        "description": "",
+        "clock": "9:00",
+        "speaker": "daniel-gerep"
+    },
+    {
+        "title": ".net",
+        "description": "",
+        "clock": "9:40",
+        "speaker": "lucas-rafael"
+    },
+    {
+        "title": "Angular JS",
+        "description": "",
+        "clock": "10:20",
+        "speaker": "alan-soares"
+    },
+    {
+        "title": "DevOps",
+        "description": "",
+        "clock": "11:00",
+        "speaker": "paulo-correa"
+    },
+    {
+        "title": "Tenho minhas empresas, mas não tenho minha mesa.",
+        "description": "",
+        "clock": "11:40",
+        "speaker": "eliezer-pimentel"
+    },
+    {
+        "title": "Almoço",
+        "description": "",
+        "clock": "12:20",
+        "speaker": ""
+    },
+    {
+        "title": "Design Pattern SOLID - Princípios para escrever um bom código",
+        "description": "O objetivo da palestra é acrescentar à desenvolvedores de qualquer linguagem noções sobre Padrões de Projeto (Design Patterns), para que possam criar códigos mais objetivos, sem repetição e de fácil manutenção.",
+        "clock": "13:40",
+        "speaker": "rafael-querino"
+    },
+    {
+        "title": "IOS",
+        "description": "",
+        "clock": "14:20",
+        "speaker": "henrique-gouveia"
+    },
+    {
+        "title": "Construindo Api com Laravel",
+        "description": "",
+        "clock": "15:00",
+        "speaker": "flavio-henrique"
+    },
+    {
+        "title": "Desenvolvimento Mobile Multiplataforma com Ionic Framework e Angular JS",
+        "description": "",
+        "clock": "15:40",
+        "speaker": "jean-orlando"
+    },
+    {
+        "title": "Python for Genomic Data Science",
+        "description": "",
+        "clock": "16:20",
+        "speaker": "carlos-roland"
+    },
+    {
+        "title": "Encerramento",
+        "description": "",
+        "clock": "17:00",
+        "speaker": ""
+    }
+]

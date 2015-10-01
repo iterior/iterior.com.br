@@ -1,0 +1,146 @@
+[
+    {
+        "_id": "presenter",
+        "name": "",
+        "company": "",
+        "job": "Apresentador",
+        "avatar": "img/rafael-querino.jpg",
+        "socials": {
+            "linkedin": "",
+            "bitbucket": "",
+            "github": ""
+        }
+    },
+    {
+        "_id": "rafael-querino",
+        "name": "Rafael Querino",
+        "company": "FC moreno e Studio Bravo!",
+        "job": "Desenvolvedor / Fundador e Desenvolvedor",
+        "avatar": "img/rafael-querino.jpg",
+        "socials": {
+            "linkedin": "https://br.linkedin.com/in/rafaelquerinomoreira",
+            "bitbucket": "rafaelqm",
+            "github": "rafaelqm"
+        }
+    },
+    {
+        "_id": "daniel-gerep",
+        "name": "Daniel Gerep",
+        "company": "Plano Bê",
+        "job": "Desenvolvedor",
+        "avatar": "img/daniel-gerep.jpg",
+        "socials": {
+            "linkedin": "https://br.linkedin.com/in/gerep",
+            "twitter": "gerep",
+            "linkedin": "gerep"
+        }
+    },
+    {
+        "_id": "alan-soares",
+        "name": "Alan Soares",
+        "company": "LuizaLabs",
+        "job": "Coordenador",
+        "avatar": "img/alan-soares.jpg",
+        "socials": {
+            "linkedin": "",
+            "twitter": "",
+            "linkedin": ""
+        }
+    },
+    {
+        "_id": "paulo-correa",
+        "name": "Paulo Corrêa",
+        "company": "LuizaLabs",
+        "job": "DevOps",
+        "avatar": "img/paulo-correa.jpg",
+        "socials": {
+            "linkedin": "",
+            "twitter": "",
+            "linkedin": ""
+        }
+    },
+    {
+        "_id": "lucas-rafael",
+        "name": "Lucas Rafael",
+        "company": "Betat Tecnologia",
+        "job": "Desenvolvedor",
+        "avatar": "img/lucas-rafael.jpg",
+        "socials": {
+            "linkedin": "",
+            "twitter": "",
+            "linkedin": ""
+        }
+    },
+    {
+        "_id": "eliezer-pimentel",
+        "name": "Eliézer Pimentel",
+        "company": "LuizaLabs",
+        "job": "Coordenador",
+        "avatar": "img/alan-soares.jpg",
+        "socials": {
+            "linkedin": "",
+            "twitter": "",
+            "linkedin": ""
+        }
+    },
+    {
+        "_id": "henrique-gouveia",
+        "name": "Henrique Gouveia",
+        "company": "ci&t",
+        "job": "Engenheiro Mobile",
+        "avatar": "img/henrique-gouveia.jpg",
+        "socials": {
+            "linkedin": "",
+            "twitter": "",
+            "linkedin": ""
+        }
+    },
+    {
+        "_id": "flavio-henrique",
+        "name": "Flávio Henrique",
+        "company": "Betta Tecnologia",
+        "job": "Desenvolvedor",
+        "avatar": "img/flavio-henrique.jpg",
+        "socials": {
+            "linkedin": "",
+            "twitter": "",
+            "linkedin": ""
+        }
+    },
+    {
+        "_id": "paulo-correa",
+        "name": "Paulo Corrêa",
+        "company": "LuizaLabs",
+        "job": "DevOps",
+        "avatar": "img/paulo-correa.jpg",
+        "socials": {
+            "linkedin": "",
+            "twitter": "",
+            "linkedin": ""
+        }
+    },
+    {
+        "_id": "jean-orlando",
+        "name": "Jean Orlando",
+        "company": "Wemoga",
+        "job": "Fundador",
+        "avatar": "img/jean-orlando.jpg",
+        "socials": {
+            "linkedin": "",
+            "twitter": "",
+            "linkedin": ""
+        }
+    },
+    {
+        "_id": "carlos-roland",
+        "name": "Carlos Roland",
+        "company": "",
+        "job": "",
+        "avatar": "img/carlos-roland.jpg",
+        "socials": {
+            "linkedin": "",
+            "twitter": "",
+            "linkedin": ""
+        }
+    }
+]
