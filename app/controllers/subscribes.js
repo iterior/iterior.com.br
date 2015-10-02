@@ -2,7 +2,7 @@
 
 var SubscribesController = {
     create: function (req, res) {
-        // return OK
+        console.log(req);
     }
 };
 

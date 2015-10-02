@@ -34,7 +34,10 @@ function AppCtrl ($http, SubscribeFactory) {
   }
 
   function subscribe () {
-    SubscribeFactory.save(vm.subscribe);
+    $http.post('/subscribe', vm.person)
+      .then(function (response) {
+
+      });
   }
 }
 
