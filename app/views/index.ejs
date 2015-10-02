@@ -7,11 +7,10 @@
 
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
-	<link rel="stylesheet" href="/assets/css/style.css" type="text/stylesheet">
+	<link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body ng-controller="AppCtrl as vm">
-
 	<header>
 		<ul id="main-nav" class="side-nav">
 			<li><a href="#home">Home</a></li>
@@ -33,14 +32,16 @@
 	<main>
 		<section id="speakers" class="center-align section">
 			<h2>Palestrantes</h2>
-			<div class="speaker-list row">
-				<div class="speaker-item col s12 m6 l3" ng-repeat="speaker in vm.speakers | orderBy:speaker.name">
-					<div class="l-box">
-						<a href="{{ ::speaker.social }}" target="_blank" class="grey-text grey-darken-2-text">
-							<img src="/assets/img/speakers/rafael-querino.jpg" alt="{{ ::speaker.name }}" class="responsive-img">
-							<h3>{{ ::speaker.name }}</h3>
-							<p>{{ ::speaker.company }}</p>
-						</a>
+			<div class="container">
+				<div class="speaker-list row">
+					<div class="speaker-item col s12 m6 l3" ng-repeat="speaker in vm.speakers | orderBy:speaker.name">
+						<div class="l-box">
+							<a href="{{ ::speaker.social }}" target="_blank" class="grey-text grey-darken-2-text">
+								<img src="/assets/img/speakers/rafael-querino.jpg" alt="{{ ::speaker.name }}" class="responsive-img">
+								<h3>{{ ::speaker.name }}</h3>
+								<p>{{ ::speaker.company }}</p>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -66,11 +67,13 @@
 		</section>
 
 		<section id="locale" class="center-align section pink white-text">
-			<h2>Local</h2>
-			<h3>Uni-FACEF. Av. Maj. Nicácio, 2433 - São José, Franca - SP, 14401-135</h3>
-			<br>
-			<a href="https://goo.gl/maps/EVgNGwUJVum" target="_blank" title="Como chegar" class="white-text">Como chegar</a>
-			<br><br>
+			<div class="section">
+				<h2>Local</h2>
+				<h3>Uni-FACEF. Av. Maj. Nicácio, 2433 - São José, Franca - SP, 14401-135</h3>
+				<br>
+				<a href="https://goo.gl/maps/EVgNGwUJVum" target="_blank" title="Como chegar" class="btn btn-flat btn-primary white-text">Como chegar</a>
+				<br><br>
+			</div>
 		</section>
 
 		<section id="partners" class="center-align">
@@ -83,36 +86,45 @@
 		</section>
 	</main>
 
-	<footer class="page-footer grey lighten-5"></footer>
+	<footer class="page-footer grey lighten-5">
+		<div class="copyright-footer">
+			Copyright 2015 iTerior. Todos os direitos reservados.
+		</div>
+	</footer>
 
 	<div id="modal-subscribe-form" class="modal">
 		<form ng-submit="vm.subscribe()">
 			<div class="modal-content">
-				<h3>Formulário de Inscrição</h3>
-				<p>Infelizmente nossas vagas são limitadas. Então corra, se inscreva e garanta seu lugar.</p>
+				<div ng-show="vm.success">
+					<strong></strong>
+				</div>
+				<div ng-hide="vm.success">
+					<h3>Formulário de Inscrição</h3>
+					<p>Infelizmente nossas vagas são limitadas. Então corra, se inscreva e garanta seu lugar.</p>
 
-				<div class="row">
-					<div class="input-field">
-						<input type="text" ng-model="vm.person.name" class="validate" min-length="8" required>
-						<label>Nome Completo</label>
-					</div>
 					<div class="row">
-						<div class="input-field col s6">
-							<input type="email" ng-model="vm.person.email" class="validate" required>
-							<label>Email</label>
+						<div class="input-field">
+							<input type="text" ng-model="vm.person.name" class="validate" min-length="8" required>
+							<label>Nome Completo</label>
 						</div>
-						<div class="input-field col s6">
-							<input type="text" ng-model="vm.person.phone" class="validate" required>
-							<label>Telefone</label>
+						<div class="row">
+							<div class="input-field col s6">
+								<input type="email" ng-model="vm.person.email" class="validate" required>
+								<label>Email</label>
+							</div>
+							<div class="input-field col s6">
+								<input type="text" ng-model="vm.person.phone" class="validate" required>
+								<label>Telefone</label>
+							</div>
 						</div>
-					</div>
-					<div class="input-field">
-						<input type="text" ng-model="vm.person.address" class="validate" required>
-						<label>Endereço</label>
+						<div class="input-field">
+							<input type="text" ng-model="vm.person.address" class="validate" required>
+							<label>Endereço</label>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="modal-footer">
+			<div class="modal-footer" ng-hide="vm.success">
 				<button type="submit" class="modal-action waves-effect waves-green btn-primary btn-flat">Inscrever</button>
 				<button class="modal-action waves-effect waves-green btn-flat modal-close">Cancelar</button>
 			</div>

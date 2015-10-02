@@ -1,8 +1,10 @@
-// var subscribe = require('../models/subscribe').Subscribe;
+var Subscribe = require('../models/subscribe');
 
 var SubscribesController = {
     create: function (req, res) {
-        console.log(req);
+    	var person = req.body;
+    	Subscribe.save(person);
+    	res.send(person);
     }
 };
 

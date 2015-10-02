@@ -6,8 +6,8 @@ var Subscribe = {
     email: '',
     phone: '',
     address: '',
-    save: function () {
-        db.set(this);
+    save: function (data) {
+        return db.push(data);
     }
 };
 

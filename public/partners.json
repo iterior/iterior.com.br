@@ -5,5 +5,12 @@
         "name":  "luizalabs",
         "site": "http://luizalabs.com",
         "avatar": "partners/luizalabs.png"
+    },
+    {
+        "_id": "coder42",
+        "kind": "",
+        "name":  "coder42",
+        "site": "http://coder42.com",
+        "avatar": "partners/coder42.png"
     }
 ]

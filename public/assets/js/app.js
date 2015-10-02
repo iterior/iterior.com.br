@@ -12,6 +12,7 @@ function AppCtrl ($http, SubscribeFactory) {
   vm.speaker = getSpeaker;
   vm.subscribe = subscribe;
 
+  vm.success = false;
   $http.get('/speakers.json')
     .then(function (response) {
       vm.speakers = response.data;
@@ -36,7 +37,8 @@ function AppCtrl ($http, SubscribeFactory) {
   function subscribe () {
     $http.post('/subscribe', vm.person)
       .then(function (response) {
-
+        vm.person = {};
+        vm.success = true;
       });
   }
 }
