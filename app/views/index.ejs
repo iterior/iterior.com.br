@@ -37,7 +37,7 @@
 					<div class="speaker-item col s12 m6 l3" ng-repeat="speaker in vm.speakers | orderBy:speaker.name">
 						<div class="l-box">
 							<a href="{{ ::speaker.social }}" target="_blank" class="grey-text grey-darken-2-text">
-								<img src="/assets/img/speakers/rafael-querino.jpg" alt="{{ ::speaker.name }}" class="responsive-img">
+								<img src="/assets/img/{{::speaker.avatar}}" alt="{{ ::speaker.name }}" class="responsive-img">
 								<h3>{{ ::speaker.name }}</h3>
 								<p>{{ ::speaker.company }}</p>
 							</a>
