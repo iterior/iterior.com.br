@@ -1,0 +1,81 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+h2 {
+    font-size: 3em;
+    font-weight: bold;
+}
+h3 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+#home {
+    background: url(../img/iterior-logo.png) no-repeat left top;
+    background-size: auto 73%;
+    transition: all 1.7s;
+    height: 100%;
+}
+#home .valign {
+    width: 100%;
+}
+#subscribe {
+    margin-top: 15em;
+}
+#subscribe .btn {
+    min-width: 14.3em !important;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 4.2em;
+    line-height: 4.2em;
+}
+.button-collapse {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 3.5em !important;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    padding: 0;
+}
+.button-collapse i {
+    color: #000;
+    font-size: 2.5em;
+}
+.speaker-list .speaker-item {
+    display: inline-block !important;
+}
+.speaker-list .speaker-item img {
+    width: 100%;
+}
+.speaker-list .speaker-item p {
+    font-size: 1em;
+    margin-top: 0;
+}
+.l-box {
+    padding: 0.75em;
+}
+.speaker-list .col {
+    float: none !important;
+    display: inline-block !important;
+}
+.talk-list .talk-item {
+    width: 100%;
+}
+.talk-list .talk-item .talk-item-container {
+    border-left: 2px solid #e91e63;
+}
+@media screen and (max-width: 600px) {
+    #Home {
+        background-size: 100% auto;
+    }
+}
+@media screen and (max-width: 992px) {
+    #home {
+        background-size: 85% auto;
+    }
+}

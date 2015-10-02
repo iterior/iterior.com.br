@@ -1,0 +1,82 @@
+[
+    {
+        "_id": "rafael-querino",
+        "name": "Rafael Querino",
+        "company": "FC moreno e Studio Bravo!",
+        "job": "Desenvolvedor / Fundador e Desenvolvedor",
+        "social": "https://br.linkedin.com/in/rafaelquerinomoreira",
+        "avatar": "speakers/rafael-querino.jpg"
+    },
+    {
+        "_id": "daniel-gerep",
+        "name": "Daniel Gerep",
+        "company": "Plano Bê",
+        "job": "Desenvolvedor",
+        "social": "https://github.com/gerep",
+        "avatar": "speakers/daniel-gerep.jpg"
+    },
+    {
+        "_id": "alan-soares",
+        "name": "Alan Soares",
+        "company": "LuizaLabs",
+        "job": "Coordenador",
+        "social": "",
+        "avatar": "speakers/alan-soares.jpg"
+    },
+    {
+        "_id": "lucas-rafael",
+        "name": "Lucas Rafael",
+        "company": "Betta Tecnologia",
+        "job": "Desenvolvedor",
+        "social": "",
+        "avatar": "speakers/lucas-rafael.jpg"
+    },
+    {
+        "_id": "eliezer-pimentel",
+        "name": "Eliézer Pimentel",
+        "company": "Merkaba",
+        "job": "Coordenador",
+        "social": "",
+        "avatar": "speakers/alan-soares.jpg"
+    },
+    {
+        "_id": "henrique-gouveia",
+        "name": "Henrique Gouveia",
+        "company": "ci&t",
+        "job": "Engenheiro Mobile",
+        "social": "",
+        "avatar": "speakers/henrique-gouveia.jpg"
+    },
+    {
+        "_id": "flavio-henrique",
+        "name": "Flávio Henrique",
+        "company": "Betta Tecnologia",
+        "job": "Desenvolvedor",
+        "social": "",
+        "avatar": "speakers/flavio-henrique.jpg"
+    },
+    {
+        "_id": "paulo-correa",
+        "name": "Paulo Corrêa",
+        "company": "LuizaLabs",
+        "job": "DevOps",
+        "social": "",
+        "avatar": "speakers/paulo-correa.jpg"
+    },
+    {
+        "_id": "jean-orlando",
+        "name": "Jean Orlando",
+        "company": "Wemoga",
+        "job": "Fundador",
+        "social": "",
+        "avatar": "speakers/jean-orlando.jpg"
+    },
+    {
+        "_id": "carlos-roland",
+        "name": "Carlos Roland",
+        "company": "",
+        "job": "",
+        "social": "",
+        "avatar": "speakers/carlos-roland.jpg"
+    }
+]

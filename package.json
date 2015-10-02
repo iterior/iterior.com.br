@@ -1,0 +1,24 @@
+{
+  "name": "iterior",
+  "version": "1.0.0",
+  "description": "iTerior landing page",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^2.3.4",
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheusho/iterior.git"
+  },
+  "author": "Matheus Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matheusho/iterior/issues"
+  },
+  "homepage": "https://github.com/matheusho/iterior#readme"
+}

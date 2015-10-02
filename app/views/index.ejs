@@ -1,0 +1,129 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>iTerior</title>
+
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+	<link rel="stylesheet" href="/assets/css/style.css" type="text/stylesheet">
+</head>
+
+<body ng-controller="AppCtrl as vm">
+
+	<header>
+		<ul id="main-nav" class="side-nav">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#speakers">Palestrantes</a></li>
+			<li><a href="#talks">Programação</a></li>
+			<li><a href="#locale">Local</a></li>
+			<li><a href="#partners">Patrocinadores</a></li>
+		</ul>
+		<a href="#" data-activates="main-nav" class="button-collapse btn-flat white right"><i class="material-icons">menu</i></a>
+	</header>
+
+	<section id="home" class="valign-wrapper center-align section">
+		<div id="subscribe" class="valign">
+			<h2>14 de Novembro</h2>
+			<a href="#modal-subscribe-form" class="subscribe-form waves-effect waves-light btn btn-primary btn-large pink">Inscreva-se</a>
+		</div>
+	</section>
+
+	<main>
+		<section id="speakers" class="center-align section">
+			<h2>Palestrantes</h2>
+			<div class="speaker-list row">
+				<div class="speaker-item col s12 m6 l3" ng-repeat="speaker in vm.speakers | orderBy:speaker.name">
+					<div class="l-box">
+						<a href="{{ ::speaker.social }}" target="_blank" class="grey-text grey-darken-2-text">
+							<img src="/assets/img/speakers/rafael-querino.jpg" alt="{{ ::speaker.name }}" class="responsive-img">
+							<h3>{{ ::speaker.name }}</h3>
+							<p>{{ ::speaker.company }}</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="talks" class="grey lighten-5 section">
+			<h2 class="center-align">Programação</h2>
+			<ul class="talk-list row" data-collapsible="accordion">
+				<li class="talk-item section" ng-repeat="talk in vm.talks | orderBy:talk.clock">
+					<div class="container talk-item-container white valign-wrapper">
+						<div class="talk-item-clock center-align col s4 m4 l3 valign">
+							<strong>{{ ::talk.clock }}</strong>
+						</div>
+						<div class="talk-item-clock center-left col s8 m4 l9 valign">
+							<div class="l-box">
+								<h3>{{ ::talk.title }}</h3>
+								<p class="speaker grey-text grey-lighten-2">{{ ::vm.speaker(talk.speaker).name }}</p>
+								<p>{{ ::talk.description }}</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</section>
+
+		<section id="locale" class="center-align section pink white-text">
+			<h2>Local</h2>
+			<h3>Uni-FACEF. Av. Maj. Nicácio, 2433 - São José, Franca - SP, 14401-135</h3>
+			<br>
+			<a href="https://goo.gl/maps/EVgNGwUJVum" target="_blank" title="Como chegar" class="white-text">Como chegar</a>
+			<br><br>
+		</section>
+
+		<section id="partners" class="center-align">
+			<h2 class="center-align">Patrocinadores</h2>
+			<div class="partners-list row"></div>
+			<h2 class="center-align">Apoio</h2>
+			<div class="row">
+				<a href="//cleandev.org/" title="CleanDev.org"><img src="/assets/img/partners/cleandev.png" alt="CleanDev.org" class="responsive-img"></a>
+			</div>
+		</section>
+	</main>
+
+	<footer class="page-footer grey lighten-5"></footer>
+
+	<div id="modal-subscribe-form" class="modal">
+		<form ng-submit="vm.subscribe()">
+			<div class="modal-content">
+				<h3>Formulário de Inscrição</h3>
+				<p>Infelizmente nossas vagas são limitadas. Então corra, se inscreva e garanta seu lugar.</p>
+
+				<div class="row">
+					<div class="input-field">
+						<input type="text" ng-model="vm.subscribe.name" class="validate" min-length="8" required>
+						<label>Nome Completo</label>
+					</div>
+					<div class="row">
+						<div class="input-field col s6">
+							<input type="email" ng-model="vm.subscribe.email" class="validate" required>
+							<label>Email</label>
+						</div>
+						<div class="input-field col s6">
+							<input type="text" ng-model="vm.subscribe.phone" class="validate" required>
+							<label>Telefone</label>
+						</div>
+					</div>
+					<div class="input-field">
+						<input type="text" ng-model="vm.subscribe.address" class="validate" required>
+						<label>Endereço</label>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="submit" class="modal-action waves-effect waves-green btn-primary btn-flat">Inscrever</button>
+				<button class="modal-action waves-effect waves-green btn-flat modal-close">Cancelar</button>
+			</div>
+		</form>
+	</div>
+
+	<!-- JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.min.js" type="text/javascript"></script>
+	<script src="/assets/js/app.js"></script>
+	<script src="/assets/js/main.js"></script>
+</body>
+</html>
