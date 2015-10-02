@@ -51,10 +51,10 @@
 			<ul class="talk-list row" data-collapsible="accordion">
 				<li class="talk-item section" ng-repeat="talk in vm.talks | orderBy:talk.clock">
 					<div class="container talk-item-container white valign-wrapper">
-						<div class="talk-item-clock center-align col s4 m4 l3 valign">
+						<div class="talk-item-clock center-align col s3 m3 l2 valign">
 							<strong>{{ ::talk.clock }}</strong>
 						</div>
-						<div class="talk-item-clock center-left col s8 m4 l9 valign">
+						<div class="talk-item-clock center-left col s9 m9 l10 valign">
 							<div class="l-box">
 								<h3>{{ ::talk.title }}</h3>
 								<p class="speaker grey-text grey-lighten-2">{{ ::vm.speaker(talk.speaker).name }}</p>
