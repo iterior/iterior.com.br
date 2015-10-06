@@ -1,9 +1,10 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
+var settings = require('./app/settings');
+
 var app = express();
 
-var settings = require('./app/settings');
 var router = require(settings.ROUTES_ROOT || './app/routes');
 
 // set views path
@@ -12,7 +13,7 @@ app.set('views', (settings.VIEWS_PATH || './app/views'));
 app.set('view engine', 'ejs');
 
 // make a static files
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname, '/public')));
 
 // set parse body request
 app.use(bodyParser.json());
