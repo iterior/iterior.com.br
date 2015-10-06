@@ -1,83 +1,97 @@
 [
-	{
+    {
+	"_id": "credenciamento",
         "title": "Credencimaneto",
         "description": "",
         "clock": "8:00",
         "speaker": ""
     },
     {
+	"_id": "abertura",
         "title": "Abertura",
         "description": "",
         "clock": "8:40",
         "speaker": ""
     },
     {
+	"_id": "conhecendo-go-lang",
         "title": "Conhecendo Go! lang",
         "description": "",
         "clock": "9:00",
         "speaker": "daniel-gerep"
     },
     {
+	"_id": ".net",
         "title": ".net",
         "description": "",
         "clock": "9:40",
         "speaker": "lucas-rafael"
     },
     {
+	"_id": "angular-js",
         "title": "Angular JS",
         "description": "",
         "clock": "10:20",
         "speaker": "alan-soares"
     },
     {
-        "title": "DevOps",
-        "description": "",
+	"_id": "aws-com-alta-disponibilidade-e-controle",
+        "title": "AWS com alta disponibilidade e controle",
+        "description": "Veremos como configurar seus Auto Scaling Groups de modo a reduzir o tempo de lançamento das instâncias, organizá-los para facilitar o gerenciamento e os deploys, além de algumas dicas práticas que poderão ajudar a diminuir o downtime de suas aplicações.",
         "clock": "11:00",
         "speaker": "paulo-correa"
     },
     {
+	"_id": "tenho-minhas-empresas-mas-nao-tenho-minha-mesa",
         "title": "Tenho minhas empresas, mas não tenho minha mesa.",
         "description": "",
         "clock": "11:40",
         "speaker": "eliezer-pimentel"
     },
     {
+	"_id": "almoco",
         "title": "Almoço",
         "description": "",
         "clock": "12:20",
         "speaker": ""
     },
     {
+	"_id": "design-pattern-solid-principios-para-escrever-um-bom-codigo",
         "title": "Design Pattern SOLID - Princípios para escrever um bom código",
         "description": "O objetivo da palestra é acrescentar à desenvolvedores de qualquer linguagem noções sobre Padrões de Projeto (Design Patterns), para que possam criar códigos mais objetivos, sem repetição e de fácil manutenção.",
         "clock": "13:40",
         "speaker": "rafael-querino"
     },
     {
+	"_id": "ios",
         "title": "IOS",
         "description": "",
         "clock": "14:20",
         "speaker": "henrique-gouveia"
     },
     {
+	"_id": "construindo-api-com-laravel",
         "title": "Construindo Api com Laravel",
         "description": "",
         "clock": "15:00",
-        "speaker": "flavio-henrique"
+        "speaker": "flavio-ferreira"
     },
     {
+	"_id": "desenvolvimento-mobile-multipatadorma-com-ionic-framework-e-angular-js",
         "title": "Desenvolvimento Mobile Multiplataforma com Ionic Framework e Angular JS",
         "description": "",
         "clock": "15:40",
         "speaker": "jean-orlando"
     },
     {
+	"_id": "python-for-genomic-data-science",
         "title": "Python for Genomic Data Science",
         "description": "",
         "clock": "16:20",
         "speaker": "carlos-roland"
     },
     {
+	"_id": "encerramento",
         "title": "Encerramento",
         "description": "",
         "clock": "17:00",

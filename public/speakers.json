@@ -13,7 +13,7 @@
         "company": "Plano Bê",
         "job": "Desenvolvedor",
         "social": "https://github.com/gerep",
-        "avatar": "speakers/daniel-gerep.jpg"
+        "avatar": "speakers/daniel-gerep.gif"
     },
     {
         "_id": "alan-soares",
@@ -48,8 +48,8 @@
         "avatar": "speakers/henrique-gouveia.jpg"
     },
     {
-        "_id": "flavio-henrique",
-        "name": "Flávio Henrique",
+        "_id": "flavio-ferreira",
+        "name": "Flávio Ferreira",
         "company": "Betta Tecnologia",
         "job": "Desenvolvedor",
         "social": "",
@@ -57,10 +57,10 @@
     },
     {
         "_id": "paulo-correa",
-        "name": "Paulo Corrêa",
+        "name": "Paulo Correa",
         "company": "LuizaLabs",
         "job": "DevOps",
-        "social": "",
+        "social": "https://www.facebook.com/pdtcorrea",
         "avatar": "speakers/paulo-correa.jpg"
     },
     {
