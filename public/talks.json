@@ -3,28 +3,28 @@
 	"_id": "credenciamento",
         "title": "Credencimaneto",
         "description": "",
-        "clock": "8:00",
+        "clock": "08:00",
         "speaker": ""
     },
     {
 	"_id": "abertura",
         "title": "Abertura",
         "description": "",
-        "clock": "8:40",
+        "clock": "08:40",
         "speaker": ""
     },
     {
 	"_id": "conhecendo-go-lang",
         "title": "Conhecendo Go! lang",
         "description": "",
-        "clock": "9:00",
+        "clock": "09:00",
         "speaker": "daniel-gerep"
     },
     {
 	"_id": "modelos-de-concorrencia-e-o-mundo-funcional",
         "title": "Modelos de Concorrência e o mundo funcional",
         "description": "",
-        "clock": "9:40",
+        "clock": "09:40",
         "speaker": "thiago-scalone"
     },
     {
