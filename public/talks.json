@@ -21,11 +21,11 @@
         "speaker": "daniel-gerep"
     },
     {
-	"_id": ".net",
-        "title": ".net",
+	"_id": "modelos-de-concorrencia-e-o-mundo-funcional",
+        "title": "Modelos de Concorrência e o mundo funcional",
         "description": "",
         "clock": "9:40",
-        "speaker": "lucas-rafael"
+        "speaker": "thiago-scalone"
     },
     {
 	"_id": "angular-js",

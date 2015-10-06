@@ -24,12 +24,12 @@
         "avatar": "speakers/alan-soares.jpg"
     },
     {
-        "_id": "lucas-rafael",
-        "name": "Lucas Rafael",
-        "company": "Betta Tecnologia",
+        "_id": "thiago-scalone",
+        "name": "thiago-scalone",
+        "company": "CloudWalk",
         "job": "Desenvolvedor",
         "social": "",
-        "avatar": "speakers/lucas-rafael.jpg"
+        "avatar": "speakers/thiago-scalone.jpg"
     },
     {
         "_id": "eliezer-pimentel",
@@ -53,7 +53,7 @@
         "company": "Betta Tecnologia",
         "job": "Desenvolvedor",
         "social": "",
-        "avatar": "speakers/flavio-henrique.jpg"
+        "avatar": "speakers/flavio-ferreira.jpg"
     },
     {
         "_id": "paulo-correa",
