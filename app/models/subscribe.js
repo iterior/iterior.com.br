@@ -7,7 +7,7 @@ var Subscribe = {
     phone: String,
     address: String,
     all: function () {
-        return FirebaseRef.childe('persons.json');
+        return FirebaseRef.child('persons.json');
     },
     get: function () {
         // Filter by email

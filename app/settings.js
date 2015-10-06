@@ -7,4 +7,4 @@ VIEWS_PATH = path.join(__dirname, 'views');
 
 ROUTES_ROOT = path.join(__dirname, '/routes');
 
-var FirebaseRef = new Firebase('https://iterior.firebaseio.com/persons/');
+var FirebaseRef = new Firebase('https://iterior.firebaseio.com/');
