@@ -1,13 +1,19 @@
-var Firebase = require('firebase');
-var db = new Firebase('https://iterior.firebaseio.com/');
+var FirebaseRef = require('../settings').FirebaseRef;
+var subscribeRef = FirebaseRef.child('persons');
 
 var Subscribe = {
-    name: '',
-    email: '',
-    phone: '',
-    address: '',
+    name: String,
+    email: String,
+    phone: String,
+    address: String,
+    all: function () {
+        return FirebaseRef.childe('persons.json');
+    },
+    get: function () {
+        // Filter by email
+    },
     save: function (data) {
-        return db.push(data);
+        return subscribeRef.push(data);
     }
 };
 
