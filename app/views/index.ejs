@@ -34,7 +34,7 @@
 			<h2>Palestrantes</h2>
 			<div class="container">
 				<div class="speaker-list row">
-					<div class="speaker-item col s12 m6 l3" ng-repeat="speaker in vm.speakers | orderBy:speaker.name">
+					<div class="speaker-item col s12 m6 l3" ng-repeat="speaker in vm.speakers | orderBy:'name'">
 						<div class="l-box">
 							<a href="{{ ::speaker.social }}" target="_blank" class="grey-text grey-darken-2-text">
 								<img src="/assets/img/{{::speaker.avatar}}" alt="{{ ::speaker.name }}" class="responsive-img">
@@ -49,7 +49,7 @@
 		<section id="talks" class="grey lighten-5 section">
 			<h2 class="center-align">Programação</h2>
 			<ul class="talk-list row" data-collapsible="accordion">
-				<li class="talk-item section" ng-repeat="talk in vm.talks | orderBy:talk.clock">
+				<li class="talk-item section" ng-repeat="talk in vm.talks | orderBy:'clock'">
 					<div class="container talk-item-container white valign-wrapper">
 						<div class="talk-item-clock center-align col s3 m3 l2 valign">
 							<strong>{{ ::talk.clock }}</strong>
