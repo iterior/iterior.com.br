@@ -29,8 +29,8 @@
     },
     {
 	"_id": "angular-js",
-        "title": "Angular JS",
-        "description": "",
+        "title": "Angular JS nas entrelinhas",
+        "description": "Um overview sobre a tecnologia que está mudando a forma de escrever front-end.",
         "clock": "10:20",
         "speaker": "alan-soares"
     },
@@ -72,14 +72,14 @@
     {
 	"_id": "construindo-api-com-laravel",
         "title": "Construindo Api com Laravel",
-        "description": "",
+        "description": "Laravel é o framework PHP do momento. Nessa palestra vamos entender o por que de sua rápida popularização desenvolvimento API RESTful",
         "clock": "15:00",
         "speaker": "flavio-ferreira"
     },
     {
 	"_id": "desenvolvimento-mobile-multipatadorma-com-ionic-framework-e-angular-js",
         "title": "Desenvolvimento Mobile Multiplataforma com Ionic Framework e Angular JS",
-        "description": "",
+        "description": "Com a popularização do mobile, várias tecnologias de desenvolvimento surgiram no mercado. Vamos falar sobre o Ionic, um framework híbrido de desenvolvimento mobile em HTML5 e AngularJS.",
         "clock": "15:40",
         "speaker": "jean-orlando"
     },
