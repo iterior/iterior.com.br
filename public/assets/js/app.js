@@ -36,15 +36,17 @@ function AppCtrl ($http, SubscribeFactory) {
 
   function getSpeaker (_id) {
     var speaker;
-    vm.speakers.filter(function (obj) {
-      if (obj._id === _id) speaker = obj;
-    });
+    if (vm.speakers) {
+      vm.speakers.filter(function (obj) {
+        if (obj._id === _id) speaker = obj;
+      });
+    }
     return speaker;
   }
 
   function subscribe () {
     SubscribeFactory.save(vm.person);
-    var urlGetSimpleForm = 'http://getsimpleform.com/message/ajax?form_api_token=f8742ce7d1a511b804312f46cb11db8d'
+    var url = 'http://getsimpleform.com/message/ajax?form_api_token=f8742ce7d1a511b804312f46cb11db8d'
     var config = {
       dataType: 'jsonp'
     };
