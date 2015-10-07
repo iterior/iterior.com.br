@@ -44,7 +44,11 @@ function AppCtrl ($http, SubscribeFactory) {
 
   function subscribe () {
     SubscribeFactory.save(vm.person);
-    vm.success = true;
+    var urlGetSimpleForm = 'http://getsimpleform.com/message/ajax?form_api_token=f8742ce7d1a511b804312f46cb11db8d'
+    $http.post(url, vm.person)
+      then(function(response) {
+        vm.success = true;
+      });
   }
 }
 
