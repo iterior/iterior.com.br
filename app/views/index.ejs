@@ -36,7 +36,7 @@
 				<div class="speaker-list row">
 					<div class="speaker-item col s12 m6 l3" ng-repeat="speaker in vm.speakers | orderBy:'name'">
 						<div class="l-box">
-							<a href="{{ ::speaker.social }}" target="_blank" class="grey-text grey-darken-2-text">
+							<a href="{{ ::speaker.social }}" target="_blank" title="{{ ::speaker.name }}" class="grey-text grey-darken-2-text">
 								<img src="/assets/img/{{::speaker.avatar}}" alt="{{ ::speaker.name }}" class="responsive-img">
 								<h3>{{ ::speaker.name }}</h3>
 								<p>{{ ::speaker.company }}</p>
@@ -68,9 +68,9 @@
 		<section id="locale" class="center-align section pink white-text">
 			<div class="section">
 				<h2>Local</h2>
-				<h3>Salão Walter Anawate - Uni-FACEF Unidade II. Avenida Major Nicácio, 2433 - São José, Franca - Sh3, 14401-135</h3>
+				<h3>{{ ::vm.site.locale }}</h3>
 				<br>
-				<a href="https://goo.gl/maps/EVgNGwUJVum" target="_blank" title="Como chegar" class="btn btn-flat btn-primary white-text">Como chegar</a>
+				<a href="{{ ::vm.site.localeMap }}" target="_blank" title="Como chegar" class="btn btn-flat btn-primary white-text">Como chegar</a>
 				<br><br>
 			</div>
 		</section>
@@ -79,10 +79,8 @@
 			<div class="partner-list row">
 				<div class="partner-item" ng-repeat="partner in vm.partners | orderBy:'name'">
 					<div class="l-box">
-						<a href="{{ ::partner.social }}" target="_blank" class="grey-text grey-darken-2-text">
+						<a href="{{ ::partner.social }}" target="_blank" title="{{ ::partner.name }}" class="grey-text grey-darken-2-text">
 							<img src="/assets/img/{{::partner.avatar}}" alt="{{ ::partner.name }}" class="responsive-img">
-							<h3>{{ ::partner.name }}</h3>
-							<p>{{ ::partner.company }}</p>
 						</a>
 					</div>
 				</div>
@@ -91,10 +89,8 @@
 			<div class="support-list row">
 				<div class="support-item" ng-repeat="support in vm.supports | orderBy:'name'">
 					<div class="l-box">
-						<a href="{{ ::support.social }}" target="_blank" class="grey-text grey-darken-2-text">
+						<a href="{{ ::support.social }}" target="_blank" title="{{ ::support.name }}" class="grey-text grey-darken-2-text">
 							<img src="/assets/img/{{::support.avatar}}" alt="{{ ::support.name }}" class="responsive-img">
-							<h3>{{ ::support.name }}</h3>
-							<p>{{ ::support.company }}</p>
 						</a>
 					</div>
 				</div>

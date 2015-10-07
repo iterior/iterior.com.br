@@ -9,11 +9,13 @@ var Subscribe = {
     all: function () {
         return subscribeRef;
     },
-    get: function () {
-        // Filter by email
+    get: function (email) {
+        subscribeRef.on('value', function (data) {
+            console.log(data);
+        });
     },
     save: function (data) {
-        return subscribeRef.push(data);
+        return subscribeRef.child(data.email).push(data);
     }
 };
 

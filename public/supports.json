@@ -1,0 +1,20 @@
+[
+    {
+        "_id": "uni-facef",
+        "name":  "Uni-FACEF",
+        "site": "http://unifacef.com.br",
+        "avatar": "partners/uni-facef.png"
+    },
+    {
+        "_id": "cleandev-org",
+        "name":  "Cleandev Org",
+        "site": "http://cleandev-org.com",
+        "avatar": "partners/cleandev-org.png"
+    },
+    {
+        "_id": "coder42",
+        "name":  "coder42",
+        "site": "http://coder42.com",
+        "avatar": "partners/coder42.png"
+    }
+]
