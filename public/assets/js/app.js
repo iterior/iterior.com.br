@@ -46,6 +46,7 @@ function AppCtrl ($http, SubscribeFactory) {
 
   function subscribe () {
     SubscribeFactory.save(vm.person);
+    vm.success = true;
     var url = 'http://getsimpleform.com/messages/ajax?form_api_token=f8742ce7d1a511b804312f46cb11db8d';
     var config = {
       dataType: 'jsonp'
@@ -54,7 +55,6 @@ function AppCtrl ($http, SubscribeFactory) {
     $http.post(url, vm.person, config)
       .then(function (response) {
         console.log(response);
-        vm.success = true;
       },
       function (err) {
         console.error('Send error', err);
