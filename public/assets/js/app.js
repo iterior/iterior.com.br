@@ -45,7 +45,6 @@ function AppCtrl ($http, SubscribeFactory) {
   }
 
   function subscribe () {
-    SubscribeFactory.save(vm.person);
     var url = 'http://getsimpleform.com/message/ajax?form_api_token=f8742ce7d1a511b804312f46cb11db8d'
     var data = {
       name: vm.person.name,
@@ -60,6 +59,7 @@ function AppCtrl ($http, SubscribeFactory) {
       .then(function (response) {
         vm.success = true;
       });
+    SubscribeFactory.save(vm.person);
   }
 }
 
