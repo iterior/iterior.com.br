@@ -53,13 +53,13 @@ h3 {
     width: 100%;
 }
 .speaker-list .speaker-item p {
-    font-size: 1em;
+    font-size: 0.8em;
     margin-top: 0;
 }
 .l-box {
     padding: 0.75em;
 }
-.speaker-list .col {
+.speaker-list .col, .partner-list .col, .support-list .col {
     float: none !important;
     display: inline-block !important;
 }

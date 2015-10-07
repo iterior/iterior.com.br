@@ -4,7 +4,7 @@
         "name": "Rafael Querino",
         "company": "FC moreno",
         "job": "Desenvolvedor / Fundador e Desenvolvedor",
-        "social": "https://br.linkedin.com/in/rafaelquerinomoreira",
+        "social": "//br.linkedin.com/in/rafaelquerinomoreira",
         "avatar": "speakers/rafael-querino.jpg"
     },
     {
@@ -12,7 +12,7 @@
         "name": "Daniel Gerep",
         "company": "Plano Bê",
         "job": "Desenvolvedor",
-        "social": "https://github.com/gerep",
+        "social": "//github.com/gerep",
         "avatar": "speakers/daniel-gerep.gif"
     },
     {
@@ -20,23 +20,23 @@
         "name": "Alan Soares",
         "company": "LuizaLabs",
         "job": "Coordenador",
-        "social": "https://br.linkedin.com/pub/alan-soares-lengruber/105/743/655",
+        "social": "//br.linkedin.com/pub/alan-soares-lengruber/105/743/655",
         "avatar": "speakers/alan-soares.png"
     },
     {
         "_id": "thiago-scalone",
         "name": "Thiago Scalone",
         "company": "CloudWalk",
-        "job": "Desenvolvedor",
-        "social": "",
+        "job": "Engenheiro de Software",
+        "social": "//br.linkedin.com/in/scalone/pt",
         "avatar": "speakers/thiago-scalone.jpg"
     },
     {
         "_id": "eliezer-pimentel",
         "name": "Eliézer Pimentel",
-        "company": "Merkaba",
-        "job": "Coordenador",
-        "social": "",
+        "company": "CloudWalk",
+        "job": "CEO",
+        "social": "//br.linkedin.com/in/eliezerpimentel",
         "avatar": "speakers/eliezer-pimentel.jpg"
     },
     {
@@ -44,7 +44,7 @@
         "name": "Henrique Gouveia",
         "company": "ci&t",
         "job": "Engenheiro Mobile",
-        "social": "",
+        "social": "//br.linkedin.com/in/gouveiahenrique",
         "avatar": "speakers/henrique-gouveia.jpg"
     },
     {
@@ -52,7 +52,7 @@
         "name": "Flávio Ferreira",
         "company": "Betta Tecnologia",
         "job": "Desenvolvedor",
-        "social": "",
+        "social": "//br.linkedin.com/in/flaviohferreira",
         "avatar": "speakers/flavio-ferreira.jpg"
     },
     {
@@ -60,7 +60,7 @@
         "name": "Paulo Correa",
         "company": "LuizaLabs",
         "job": "DevOps",
-        "social": "https://www.facebook.com/pdtcorrea",
+        "social": "//www.facebook.com/pdtcorrea",
         "avatar": "speakers/paulo-correa.jpg"
     },
     {
@@ -68,15 +68,15 @@
         "name": "Jean Orlando",
         "company": "Wemoga",
         "job": "Fundador e Desenvolvedor",
-        "social": "",
+        "social": "//br.linkedin.com/in/jeanorlando",
         "avatar": "speakers/jean-orlando.jpg"
     },
     {
         "_id": "carlos-roland",
         "name": "Carlos Roland",
-        "company": "",
-        "job": "",
-        "social": "",
+        "company": "Uni-FACEF",
+        "job": "Professor",
+        "social": "//br.linkedin.com/pub/carlos-roland/31/5b1/63b",
         "avatar": "speakers/carlos-roland.jpg"
     }
 ]
