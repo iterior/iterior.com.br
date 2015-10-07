@@ -76,10 +76,28 @@
 		</section>
 		<section id="partners" class="center-align">
 			<h2 class="center-align">Patrocinadores</h2>
-			<div class="partners-list row"></div>
+			<div class="partner-list row">
+				<div class="partner-item" ng-repeat="partner in vm.partners | orderBy:'name'">
+					<div class="l-box">
+						<a href="{{ ::partner.social }}" target="_blank" class="grey-text grey-darken-2-text">
+							<img src="/assets/img/{{::partner.avatar}}" alt="{{ ::partner.name }}" class="responsive-img">
+							<h3>{{ ::partner.name }}</h3>
+							<p>{{ ::partner.company }}</p>
+						</a>
+					</div>
+				</div>
+			</div>
 			<h2 class="center-align">Apoio</h2>
-			<div class="row">
-				<a href="//cleandev.org/" title="CleanDev.org"><img src="/assets/img/partners/cleandev.png" alt="CleanDev.org" class="responsive-img"></a>
+			<div class="support-list row">
+				<div class="support-item" ng-repeat="support in vm.supports | orderBy:'name'">
+					<div class="l-box">
+						<a href="{{ ::support.social }}" target="_blank" class="grey-text grey-darken-2-text">
+							<img src="/assets/img/{{::support.avatar}}" alt="{{ ::support.name }}" class="responsive-img">
+							<h3>{{ ::support.name }}</h3>
+							<p>{{ ::support.company }}</p>
+						</a>
+					</div>
+				</div>
 			</div>
 		</section>
 	</main>
@@ -94,15 +112,18 @@
 		<form ng-submit="vm.subscribe()">
 			<div class="modal-content">
 				<div ng-show="vm.success">
-					<strong>Obrigado por se registar.</strong>
-					<p>Logo receberá um email com a confirmação do evento. Esperamos anciosamente pela sua presença =)</p>
+					<h3><strong>Obrigado por se registar</strong></h3>
+					<p>Ei pessoa disposta, estamos extremamente felizes por tê-lo em nosso evento, logo receberá um email para confirmar sua presença, irrelevante, pois temos certeza da sua presença ;)</p>
+					<p>Até nos conhecermos pessoalmente podemos bater um papo no nosso canal do <a href="{{ ::vm.site.slack }}" target="_blank" title="iTerior CleanDev.org">slack</a>, bora lá?</p>
 					<br>
 					<p>Até 14 de Novembro de 2015.</p>
-					<p>att. <br>A direção.</p>
+					<p><i class="material-icons"></i></p>
 				</div>
 				<div ng-hide="vm.success">
 					<h3>Formulário de Inscrição</h3>
-					<p>Infelizmente nossas vagas são limitadas. Então corra, se inscreva e garanta seu lugar.</p>
+					<p>Olá meu amigo, que bom saber que está interessado =). Nosso evento é filantrópico, com o objetivo de unir pessoas interessantes e dispostas. Nossa taxa de inscrição é singela, algum alimento não perecível é o suficiente, vamos doá-los para pessoas necessitadas.</p>
+					<p>Abaixo você encontra nosso formulário de inscrição.</p>
+					<p>[]s</p>
 
 					<div class="row">
 						<div class="input-field">
@@ -128,7 +149,7 @@
 			</div>
 			<div class="modal-footer">
 				<button type="submit" ng-hide="vm.success" class="modal-action waves-effect waves-green btn-primary btn-flat">Inscrever</button>
-				<button class="modal-action waves-effect waves-green btn-flat modal-close">Cancelar</button>
+				<button class="modal-action waves-effect waves-green btn-flat modal-close">Fechar</button>
 			</div>
 		</form>
 	</div>

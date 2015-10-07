@@ -11,8 +11,12 @@ function AppCtrl ($http, SubscribeFactory) {
   var vm = this;
   vm.speaker = getSpeaker;
   vm.subscribe = subscribe;
-
   vm.success = false;
+
+  $http.get('/site.json')
+    .then(function (response) {
+      vm.site = response.data;
+    });
   $http.get('/speakers.json')
     .then(function (response) {
       vm.speakers = response.data;
@@ -25,6 +29,10 @@ function AppCtrl ($http, SubscribeFactory) {
     .then(function (response) {
       vm.partners = response.data;
     });
+  $http.get('/support.json')
+    .then(function (response) {
+      vm.support = response.data;
+    });
 
   function getSpeaker (_id) {
     var speaker;
@@ -35,22 +43,18 @@ function AppCtrl ($http, SubscribeFactory) {
   }
 
   function subscribe () {
-    $http.post('/subscribe', vm.person)
-      .then(function (response) {
-        vm.person = {};
-        vm.success = true;
-      });
+    SubscribeFactory.save(vm.person);
   }
 }
 
 function SubscribeFactory ($http) {
   var SubscribeFactory = {
     save: function (data) {
-      $http.post('/subscribe', vm.subscribe)
-      .then(function (response) {
-        if (!response) console.error(response.error);
-        var data = response.data;
-      });
+      $http.post('/subscribe', data)
+        .then(function (response) {
+          if (!response) console.error(response.error);
+          var data = response.data;
+        });
     }
   };
   return SubscribeFactory;
