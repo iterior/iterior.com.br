@@ -76,14 +76,16 @@
 			</div>
 		</section>
 		<section id="partners" class="center-align">
-			<h2 class="center-align">Patrocinadores</h2>
-			<div class="container">
-				<div class="partner-list row">
-					<div class="partner-item" ng-repeat="partner in vm.partners | orderBy:'name'">
-						<div class="l-box">
-							<a href="{{ ::partner.social }}" target="_blank" title="{{ ::partner.name }}" class="grey-text grey-darken-2-text">
-								<img src="/assets/img/{{::partner.avatar}}" alt="{{ ::partner.name }}" class="responsive-img">
-							</a>
+			<div class="hide">
+				<h2 class="center-align">Patrocinadores</h2>
+				<div class="container">
+					<div class="partner-list row">
+						<div class="partner-item" ng-repeat="partner in vm.partners | orderBy:'name'">
+							<div class="l-box">
+								<a href="{{ ::partner.social }}" target="_blank" title="{{ ::partner.name }}" class="grey-text grey-darken-2-text">
+									<img src="/assets/img/{{::partner.avatar}}" alt="{{ ::partner.name }}" class="responsive-img">
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
