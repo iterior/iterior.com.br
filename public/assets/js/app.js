@@ -45,7 +45,10 @@ function AppCtrl ($http, SubscribeFactory) {
   function subscribe () {
     SubscribeFactory.save(vm.person);
     var urlGetSimpleForm = 'http://getsimpleform.com/message/ajax?form_api_token=f8742ce7d1a511b804312f46cb11db8d'
-    $http.post(url, vm.person)
+    var config = {
+      dataType: 'jsonp'
+    };
+    $http.post(url, vm.person, config)
       then(function(response) {
         vm.success = true;
       });
