@@ -72,7 +72,7 @@
     {
 	"_id": "construindo-api-com-laravel",
         "title": "Construindo Api com Laravel",
-        "description": "Laravel é o framework PHP do momento. Nessa palestra vamos entender o por que de sua rápida popularização desenvolvimento API RESTful",
+        "description": "Laravel é o framework PHP do momento. Nessa palestra vamos entender o por que de sua rápida popularização desenvolvendo uma API RESTful",
         "clock": "15:00",
         "speaker": "flavio-ferreira"
     },
