@@ -44,6 +44,7 @@ function AppCtrl ($http, SubscribeFactory) {
 
   function subscribe () {
     SubscribeFactory.save(vm.person);
+    vm.success = true;
   }
 }
 

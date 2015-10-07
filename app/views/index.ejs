@@ -13,11 +13,12 @@
 <body ng-controller="AppCtrl as vm">
 	<header>
 		<ul id="main-nav" class="side-nav">
-			<li><a href="#home">Home</a></li>
-			<li><a href="#speakers">Palestrantes</a></li>
-			<li><a href="#talks">Programação</a></li>
-			<li><a href="#locale">Local</a></li>
-			<li><a href="#partners">Patrocinadores</a></li>
+			<li><a href="#home" title="Home">Home</a></li>
+			<li><a href="#speakers" title="Palestrantes">Palestrantes</a></li>
+			<li><a href="#talks" title="Programação">Programação</a></li>
+			<li><a href="#locale" title="Local">Local</a></li>
+			<li><a href="#partners" title="Patrocinadores">Patrocinadores</a></li>
+			<li><a href="#modal-subscribe-form" class="subscribe-form" title="Inscreva-se">Inscreva-se</a></li>
 		</ul>
 		<a href="#" data-activates="main-nav" class="button-collapse btn-flat white right"><i class="material-icons">menu</i></a>
 	</header>
@@ -25,7 +26,7 @@
 	<section id="home" class="valign-wrapper center-align section">
 		<div id="subscribe" class="valign">
 			<h2>14 de Novembro</h2>
-			<a href="#modal-subscribe-form" class="subscribe-form waves-effect waves-light btn btn-primary btn-large pink">Inscreva-se</a>
+			<a href="#modal-subscribe-form" title="Inscreva-se" class="subscribe-form waves-effect waves-light btn btn-primary btn-large pink">Inscreva-se</a>
 		</div>
 	</section>
 
@@ -104,7 +105,7 @@
 		</div>
 	</footer>
 
-	<div id="modal-subscribe-form" class="modal">
+	<div id="modal-subscribe-form" class="modal modal-fixed-footer">
 		<form ng-submit="vm.subscribe()">
 			<div class="modal-content">
 				<div ng-show="vm.success">
