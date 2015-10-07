@@ -53,7 +53,11 @@ function AppCtrl ($http, SubscribeFactory) {
 
     $http.post(url, vm.person, config)
       .then(function (response) {
+        console.log(response);
         vm.success = true;
+      },
+      function (response) {
+        console.log(response);
       });
   }
 }
