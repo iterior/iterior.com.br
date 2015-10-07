@@ -36,7 +36,7 @@
 			<h2>Palestrantes</h2>
 			<div class="container">
 				<div class="speaker-list row">
-					<div id="{{ ::speaker._id }}" class="speaker-item col s12 m6 l3" ng-repeat="speaker in vm.speakers | orderBy:'name'">
+					<div id="speaker-{{ ::speaker._id }}" class="speaker-item col s12 m6 l3" ng-repeat="speaker in vm.speakers | orderBy:'name'">
 						<div class="l-box">
 							<a href="{{ ::speaker.social }}" target="_blank" title="{{ ::speaker.name }}" class="grey-text grey-darken-2-text">
 								<img src="/assets/img/{{::speaker.avatar}}" alt="{{ ::speaker.name }}" class="responsive-img">
@@ -51,7 +51,7 @@
 		<section id="talks" class="grey lighten-5 section">
 			<h2 class="center-align">Programação</h2>
 			<ul class="talk-list row" data-collapsible="accordion">
-				<li id="{{ ::talk._id }}" class="talk-item section" ng-repeat="talk in vm.talks | orderBy:'clock'">
+				<li id="talk-{{ ::talk._id }}" class="talk-item section" ng-repeat="talk in vm.talks | orderBy:'clock'">
 					<div class="container talk-item-container white valign-wrapper">
 						<div class="talk-item-clock center-align col s3 m3 l2 valign">
 							<strong>{{ ::talk.clock }}</strong>
@@ -81,7 +81,7 @@
 				<h2 class="center-align">Patrocinadores</h2>
 				<div class="container">
 					<div class="partner-list row">
-						<div id="{{ ::partner._id }}" class="partner-item" ng-repeat="partner in vm.partners | orderBy:'name'">
+						<div id="partner-{{ ::partner._id }}" class="partner-item" ng-repeat="partner in vm.partners | orderBy:'name'">
 							<div class="l-box">
 								<a href="{{ ::partner.social }}" target="_blank" title="{{ ::partner.name }}" class="grey-text grey-darken-2-text">
 									<img src="/assets/img/{{::partner.avatar}}" alt="{{ ::partner.name }}" class="responsive-img">
@@ -94,7 +94,7 @@
 			<h2 class="center-align">Apoio</h2>
 			<div class="container">
 				<div class="support-list row">
-					<div id="{{ ::support._id }}" class="support-item col s12 m6 l3" ng-repeat="support in vm.supports | orderBy:'name'">
+					<div id="support-{{ ::support._id }}" class="support-item col s12 m6 l3" ng-repeat="support in vm.supports | orderBy:'name'">
 						<div class="l-box">
 							<a href="{{ ::support.social }}" target="_blank" title="{{ ::support.name }}" class="grey-text grey-darken-2-text">
 								<img src="/assets/img/{{::support.avatar}}" alt="{{ ::support.name }}" class="responsive-img">
