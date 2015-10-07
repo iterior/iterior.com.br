@@ -29,9 +29,9 @@ function AppCtrl ($http, SubscribeFactory) {
     .then(function (response) {
       vm.partners = response.data;
     });
-  $http.get('/support.json')
+  $http.get('/supports.json')
     .then(function (response) {
-      vm.support = response.data;
+      vm.supports = response.data;
     });
 
   function getSpeaker (_id) {
