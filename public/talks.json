@@ -28,7 +28,7 @@
         "speaker": "thiago-scalone"
     },
     {
-	"_id": "angular-js",
+	"_id": "angular-js-nas-entrelinhas",
         "title": "Angular JS nas entrelinhas",
         "description": "Um overview sobre a tecnologia que está mudando a forma de escrever front-end.",
         "clock": "10:20",
@@ -77,7 +77,7 @@
         "speaker": "flavio-ferreira"
     },
     {
-	"_id": "desenvolvimento-mobile-multipatadorma-com-ionic-framework-e-angular-js",
+	"_id": "desenvolvimento-mobile-multipataforma-com-ionic-framework-e-angular-js",
         "title": "Desenvolvimento Mobile Multiplataforma com Ionic Framework e Angular JS",
         "description": "Com a popularização do mobile, várias tecnologias de desenvolvimento surgiram no mercado. Vamos falar sobre o Ionic, um framework híbrido de desenvolvimento mobile em HTML5 e AngularJS.",
         "clock": "15:40",
