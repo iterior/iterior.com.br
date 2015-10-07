@@ -47,11 +47,17 @@ function AppCtrl ($http, SubscribeFactory) {
   function subscribe () {
     SubscribeFactory.save(vm.person);
     var url = 'http://getsimpleform.com/message/ajax?form_api_token=f8742ce7d1a511b804312f46cb11db8d'
+    var data = {
+      name: vm.person.name,
+      email: vm.person.email,
+      phone: vm.person.phone,
+      address: vm.person.address,
+    };
     var config = {
       dataType: 'jsonp'
     };
-    $http.post(url, vm.person, config)
-      .then(function(response) {
+    $http.post(url, data, config)
+      .then(function (response) {
         vm.success = true;
       });
   }
