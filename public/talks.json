@@ -16,7 +16,7 @@
     {
 	"_id": "conhecendo-go-lang",
         "title": "Conhecendo Go! lang",
-        "description": "",
+        "description": "Não vou contar história da linguagem, não vou dizer se ela é melhor ou pior do que a linguagem X, o que vou apresentar é algo bem simples e direto, como funciona e com exemplos. Valores, variáveis, contantes, blocos, estruturas, ponteiros, interfaces, erros, e o que mais der tempo, são 40 minutos cravados!",
         "clock": "09:00",
         "speaker": "daniel-gerep"
     },
