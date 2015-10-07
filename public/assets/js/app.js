@@ -56,8 +56,8 @@ function AppCtrl ($http, SubscribeFactory) {
         console.log(response);
         vm.success = true;
       },
-      function (response) {
-        console.log(response);
+      function (err) {
+        console.error('Send error', err);
       });
   }
 }
