@@ -15,7 +15,7 @@ var Subscribe = {
         });
     },
     save: function (data) {
-        return subscribeRef.child(data.email).push(data);
+        return subscribeRef.push(data);
     }
 };
 
