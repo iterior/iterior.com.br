@@ -51,7 +51,7 @@ function AppCtrl ($http, SubscribeFactory) {
       dataType: 'jsonp'
     };
     $http.post(url, vm.person, config)
-      then(function(response) {
+      .then(function(response) {
         vm.success = true;
       });
   }
