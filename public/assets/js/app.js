@@ -45,21 +45,16 @@ function AppCtrl ($http, SubscribeFactory) {
   }
 
   function subscribe () {
-    var url = 'http://getsimpleform.com/message/ajax?form_api_token=f8742ce7d1a511b804312f46cb11db8d'
-    var data = {
-      name: vm.person.name,
-      email: vm.person.email,
-      phone: vm.person.phone,
-      address: vm.person.address,
-    };
+    SubscribeFactory.save(vm.person);
+    var url = 'http://getsimpleform.com/messages/ajax?form_api_token=f8742ce7d1a511b804312f46cb11db8d';
     var config = {
       dataType: 'jsonp'
     };
-    $http.post(url, data, config)
+
+    $http.post(url, vm.person, config)
       .then(function (response) {
         vm.success = true;
       });
-    SubscribeFactory.save(vm.person);
   }
 }
 
