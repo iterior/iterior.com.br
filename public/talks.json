@@ -22,8 +22,8 @@
     },
     {
 	"_id": "modelos-de-concorrencia-e-o-mundo-funcional",
-        "title": "Modelos de Concorrência e o mundo funcional",
-        "description": "",
+        "title": "Concorrência em linguagens imperativas e funcionais",
+        "description": "Nossos softwares precisam ser mais eficientes, aproveitar melhor os núcleos, lidar com milhares de usuários, terabytes de dados, prever fracasso de hardware e software e etc. O uso de linguagem imperativas nem sempre é a melhor ferramenta para esse trabalho. Nessa palestra vamos fazer uma reflexão sobre concorrência e paralelismo em linguagens imperativas e funcionais, e discutir algumas características de linguagens funcionais que a tornam tão eficientes nesse cenário.",
         "clock": "09:40",
         "speaker": "thiago-scalone"
     },
