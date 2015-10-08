@@ -1,0 +1,82 @@
+[
+    {
+        "_id": "rafael-querino",
+        "name": "Rafael Querino",
+        "company": "FC moreno",
+        "job": "Desenvolvedor / Fundador e Desenvolvedor",
+        "social": "//br.linkedin.com/in/rafaelquerinomoreira",
+        "avatar": "speakers/rafael-querino.jpg"
+    },
+    {
+        "_id": "daniel-gerep",
+        "name": "Daniel Gerep",
+        "company": "Plano Bê",
+        "job": "Desenvolvedor",
+        "social": "//github.com/gerep",
+        "avatar": "speakers/daniel-gerep.gif"
+    },
+    {
+        "_id": "alan-soares",
+        "name": "Alan Soares",
+        "company": "LuizaLabs",
+        "job": "Coordenador",
+        "social": "//br.linkedin.com/pub/alan-soares-lengruber/105/743/655",
+        "avatar": "speakers/alan-soares.png"
+    },
+    {
+        "_id": "thiago-scalone",
+        "name": "Thiago Scalone",
+        "company": "CloudWalk",
+        "job": "Engenheiro de Software",
+        "social": "//br.linkedin.com/in/scalone/pt",
+        "avatar": "speakers/thiago-scalone.jpg"
+    },
+    {
+        "_id": "eliezer-pimentel",
+        "name": "Eliézer Pimentel",
+        "company": "CloudWalk",
+        "job": "CEO",
+        "social": "//www.about.me/eliezerpimentel",
+        "avatar": "speakers/eliezer-pimentel.jpg"
+    },
+    {
+        "_id": "henrique-gouveia",
+        "name": "Henrique Gouveia",
+        "company": "ci&t",
+        "job": "Engenheiro Mobile",
+        "social": "//br.linkedin.com/in/gouveiahenrique",
+        "avatar": "speakers/henrique-gouveia.jpg"
+    },
+    {
+        "_id": "flavio-ferreira",
+        "name": "Flávio Ferreira",
+        "company": "Betta Tecnologia",
+        "job": "Desenvolvedor",
+        "social": "//br.linkedin.com/in/flaviohferreira",
+        "avatar": "speakers/flavio-ferreira.jpg"
+    },
+    {
+        "_id": "paulo-correa",
+        "name": "Paulo Correa",
+        "company": "LuizaLabs",
+        "job": "DevOps",
+        "social": "//www.facebook.com/pdtcorrea",
+        "avatar": "speakers/paulo-correa.jpg"
+    },
+    {
+        "_id": "jean-orlando",
+        "name": "Jean Orlando",
+        "company": "Wemoga",
+        "job": "Fundador e Desenvolvedor",
+        "social": "//br.linkedin.com/in/jeanorlando",
+        "avatar": "speakers/jean-orlando.jpg"
+    },
+    {
+        "_id": "carlos-roland",
+        "name": "Carlos Roland",
+        "company": "Uni-FACEF / Fatec",
+        "job": "Professor",
+        "social": "//br.linkedin.com/pub/carlos-roland/31/5b1/63b",
+        "avatar": "speakers/carlos-roland.jpg"
+    }
+]

@@ -1,1 +1,1 @@
-web: gunicorn jogo.wsgi
+web: node server.js

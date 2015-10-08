@@ -1,0 +1,169 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>iTerior Conference 2015</title>
+	<meta name="description" content="iTerior é a primeira conferência de tecnologia de Franca &amp; Região. Aqui vamos juntar pessoas dipostas em contribuir seus conhecimentos e vivências. Junte-se à nós.">
+	<link rel="icon" href="/favicon.png">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+	<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body ng-controller="AppCtrl as vm">
+	<header>
+		<ul id="main-nav" class="side-nav">
+			<li><a href="#home" title="Home">Home</a></li>
+			<li><a href="#speakers" title="Palestrantes">Palestrantes</a></li>
+			<li><a href="#talks" title="Programação">Programação</a></li>
+			<li><a href="#locale" title="Local">Local</a></li>
+			<li><a href="#partners" title="Patrocinadores">Patrocinadores</a></li>
+			<li class="pink white-text"><a href="#modal-subscribe-form" class="subscribe-form pink white-text" title="Inscreva-se">Inscreva-se</a></li>
+		</ul>
+		<a href="#" data-activates="main-nav" class="button-collapse btn-flat white right"><i class="material-icons">menu</i></a>
+	</header>
+
+	<section id="home" class="valign-wrapper center-align section">
+		<div id="subscribe" class="valign">
+			<h2>14 de Novembro</h2>
+			<a href="#modal-subscribe-form" title="Inscreva-se" class="subscribe-form waves-effect waves-light btn btn-primary btn-large pink">Inscreva-se</a>
+		</div>
+	</section>
+
+	<main>
+		<section id="speakers" class="center-align section">
+			<h2>Palestrantes</h2>
+			<div class="container">
+				<div class="speaker-list row">
+					<div id="speaker-{{ ::speaker._id }}" class="speaker-item col s12 m6 l3" ng-repeat="speaker in vm.speakers | orderBy:'name'">
+						<div class="l-box">
+							<a href="{{ ::speaker.social }}" target="_blank" title="{{ ::speaker.name }}" class="grey-text grey-darken-2-text">
+								<img src="/assets/img/{{::speaker.avatar}}" alt="{{ ::speaker.name }}" class="responsive-img">
+								<h3>{{ ::speaker.name }}</h3>
+								<p>{{ ::speaker.company }}</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="talks" class="grey lighten-5 section">
+			<h2 class="center-align">Programação</h2>
+			<ul class="talk-list row" data-collapsible="accordion">
+				<li id="talk-{{ ::talk._id }}" class="talk-item section" ng-repeat="talk in vm.talks | orderBy:'clock'">
+					<div class="container talk-item-container white valign-wrapper">
+						<div class="talk-item-clock center-align col s3 m3 l2 valign">
+							<strong>{{ ::talk.clock }}</strong>
+						</div>
+						<div class="talk-item-clock center-left col s9 m9 l10 valign">
+							<div class="l-box">
+								<h3>{{ ::talk.title }}</h3>
+								<p class="speaker grey-text grey-lighten-2">{{ ::vm.speaker(talk.speaker).name }}</p>
+								<p>{{ ::talk.description }}</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section id="locale" class="center-align section pink white-text">
+			<div class="container section">
+				<h2>Local</h2>
+				<h3>{{ ::vm.site.locale }}</h3>
+				<br>
+				<a href="{{ ::vm.site.localeMap }}" target="_blank" title="Como chegar" class="btn btn-flat btn-primary white-text">Como chegar</a>
+				<br><br>
+			</div>
+		</section>
+		<section id="partners" class="center-align">
+			<div class="hide">
+				<h2 class="center-align">Patrocinadores</h2>
+				<div class="container">
+					<div class="partner-list row">
+						<div id="partner-{{ ::partner._id }}" class="partner-item" ng-repeat="partner in vm.partners | orderBy:'name'">
+							<div class="l-box">
+								<a href="{{ ::partner.social }}" target="_blank" title="{{ ::partner.name }}" class="grey-text grey-darken-2-text">
+									<img src="/assets/img/{{::partner.avatar}}" alt="{{ ::partner.name }}" class="responsive-img">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h2 class="center-align">Apoio</h2>
+			<div class="container">
+				<div class="support-list row">
+					<div id="support-{{ ::support._id }}" class="support-item col s12 m6 l3" ng-repeat="support in vm.supports | orderBy:'name'">
+						<div class="l-box">
+							<a href="{{ ::support.social }}" target="_blank" title="{{ ::support.name }}" class="grey-text grey-darken-2-text">
+								<img src="/assets/img/{{::support.avatar}}" alt="{{ ::support.name }}" class="responsive-img">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="grey lighten-5">
+		<div class="container section">
+			<p>Copyright 2015 iTerior. Todos os direitos reservados.</p>
+		</div>
+	</footer>
+
+	<div id="modal-subscribe-form" class="modal modal-fixed-footer">
+		<form ng-submit="vm.subscribe()">
+			<div class="modal-content">
+				<div ng-show="vm.success">
+					<h3><strong>Obrigado por se inscrever =)</strong></h3>
+					<p>Hey pessoa disposta, estamos extremamente felizes por tê-lo em nosso evento, logo receberá um email confirmando sua inscrição.</p>
+					<p>Até nos conhecermos pessoalmente podemos bater um papo no nosso canal do <a href="{{ ::vm.site.slack }}" target="_blank" title="iTerior CleanDev.org">slack</a>, bora lá?</p>
+					<br>
+					<p>Até 14 de Novembro.</p>
+					<p>[]s</p>
+				</div>
+				<div ng-hide="vm.success">
+					<h3>Formulário de Inscrição</h3>
+					<p>Olá meu amigo, que bom saber que está interessado =).</p>
+					<p>Nosso evento é filantrópico e tem como objetivo reunir pessoas interessantes e dispostas. Nossa taxa de inscrição é singela, algum alimento não perecível é o suficiente, vamos doá-los para pessoas necessitadas.</p>
+					<p>Abaixo você encontra nosso formulário de inscrição.</p>
+
+					<div class="row">
+						<div class="input-field">
+							<input type="text" ng-model="vm.person.name" class="validate" min-length="8" required>
+							<label>Nome Completo</label>
+						</div>
+						<div class="row">
+							<div class="input-field col s6">
+								<input type="email" ng-model="vm.person.email" class="validate" required>
+								<label>Email</label>
+							</div>
+							<div class="input-field col s6">
+								<input type="text" ng-model="vm.person.phone" class="validate" required>
+								<label>Telefone</label>
+							</div>
+						</div>
+						<div class="input-field">
+							<input type="text" ng-model="vm.person.address" class="validate" required>
+							<label>Endereço</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="submit" ng-hide="vm.success" class="modal-action waves-effect waves-green btn-primary btn-flat">Inscrever</button>
+				<button type="button" class="modal-action waves-effect waves-green btn-flat modal-close">Fechar</button>
+			</div>
+		</form>
+	</div>
+
+	<!-- JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.min.js" type="text/javascript"></script>
+	<script src="/assets/js/app.js"></script>
+	<script src="/assets/js/main.js"></script>
+</body>
+</html>

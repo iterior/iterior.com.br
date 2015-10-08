@@ -1,8 +1,2 @@
-Jogo da Velha
-=================
-
-
-#### Site: lucas-jogodavelha.herokuapp.com
-
-
- # Jogador  vs  Computador
+# iterior.github.com
+iTerior landing page
