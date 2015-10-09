@@ -80,3 +80,10 @@ h3 {
         background-size: 85% auto;
     }
 }
+
+#inner {
+  left: 50%;
+  margin-left: -100px; /* A metade de sua largura. */
+  position: absolute;
+  width: 200px; /* O valor que você desejar. */
+}
