@@ -97,7 +97,7 @@
 				<div class="support-list row">
 					<div id="support-{{ ::support._id }}" class="support-item col s12 m6 l3" ng-repeat="support in vm.supports | orderBy:'name'">
 						<div class="l-box">
-							<a href="{{ ::support.social }}" target="_blank" title="{{ ::support.name }}" class="grey-text grey-darken-2-text">
+							<a href="{{ ::support.site }}" target="_blank" title="{{ ::support.name }}" class="grey-text grey-darken-2-text">
 								<img src="/assets/img/{{::support.avatar}}" alt="{{ ::support.name }}" class="responsive-img">
 							</a>
 						</div>
