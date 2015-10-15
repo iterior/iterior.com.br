@@ -16,14 +16,14 @@
     {
 	"_id": "conhecendo-go-lang",
         "title": "Conhecendo Go! lang",
-        "description": "Não vou contar história da linguagem, não vou dizer se ela é melhor ou pior do que a linguagem X, o que vou apresentar é algo bem simples e direto, como funciona e com exemplos. Valores, variáveis, contantes, blocos, estruturas, ponteiros, interfaces, erros, e o que mais der tempo, são 40 minutos cravados!",
+        "description": "Não vou contar história da linguagem, não vou dizer se ela é melhor ou pior do que a linguagem X, o que vou apresentar é algo bem simples e direto, como funciona e com exemplos. Valores, variáveis, constantes, blocos, estruturas, ponteiros, interfaces, erros, e o que mais der tempo, são 40 minutos cravados!",
         "clock": "09:00",
         "speaker": "daniel-gerep"
     },
     {
 	"_id": "modelos-de-concorrencia-e-o-mundo-funcional",
         "title": "Concorrência em linguagens imperativas e funcionais",
-        "description": "Nossos softwares precisam ser mais eficientes, aproveitar melhor os núcleos, lidar com milhares de usuários, terabytes de dados, prever fracasso de hardware e software e etc. O uso de linguagem imperativas nem sempre é a melhor ferramenta para esse trabalho. Nessa palestra vamos fazer uma reflexão sobre concorrência e paralelismo em linguagens imperativas e funcionais, e discutir algumas características de linguagens funcionais que a tornam tão eficientes nesse cenário.",
+        "description": "Nossos softwares precisam ser mais eficientes, aproveitar melhor os núcleos, lidar com milhares de usuários, terabytes de dados, prever fracasso de hardware e software, etc. O uso de linguagens imperativas nem sempre é a melhor ferramenta para esse trabalho. Nessa palestra vamos fazer uma reflexão sobre concorrência e paralelismo em linguagens imperativas e funcionais e discutir algumas características de linguagens funcionais que a tornam tão eficientes nesse cenário.",
         "clock": "09:40",
         "speaker": "thiago-scalone"
     },
@@ -58,7 +58,7 @@
     {
 	"_id": "design-pattern-solid-principios-para-escrever-um-bom-codigo",
         "title": "Design Pattern SOLID - Princípios para escrever um bom código",
-        "description": "O objetivo da palestra é acrescentar à desenvolvedores de qualquer linguagem noções sobre Padrões de Projeto (Design Patterns), para que possam criar códigos mais objetivos, sem repetição e de fácil manutenção.",
+        "description": "O objetivo da palestra é acrescentar à desenvolvedores de qualquer linguagem noções sobre Padrões de Projeto (Design Patterns) para que possam criar códigos mais objetivos, sem repetição e de fácil manutenção.",
         "clock": "13:40",
         "speaker": "rafael-querino"
     },
