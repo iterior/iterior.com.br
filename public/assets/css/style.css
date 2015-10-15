@@ -32,19 +32,27 @@ h3 {
     height: 4.2em;
     line-height: 4.2em;
 }
-.button-collapse {
+.nav-right {
     position: fixed;
     top: 10px;
     right: 10px;
-    width: 3.5em !important;
-    height: 3em;
-    line-height: 3em;
-    text-align: center;
-    padding: 0;
 }
-.button-collapse i {
+.nav-right li {
+    display: inline-block;
+}
+.nav-right li a[class*=btn] {
+    width: 3.5em !important;
+    height: 3em !important;
+    line-height: 3em !important;
+    text-align: center !important;
+    padding: 0 !important;
+}
+.nav-right li a[class*=btn] i {
     color: #000;
     font-size: 2.5em;
+}
+.share-button i {
+    font-size: 1.65em !important;
 }
 .speaker-list .speaker-item {
     display: inline-block !important;
