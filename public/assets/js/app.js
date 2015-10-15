@@ -9,9 +9,14 @@ AppCtrl.$inject = ['$http', 'SubscribeFactory'];
 
 function AppCtrl ($http, SubscribeFactory) {
   var vm = this;
-  vm.speaker = getSpeaker;
+  vm.site = {};
+  vm.speakers = [];
+  vm.talks = [];
+  vm.partners = [];
+  vm.supports = [];
   vm.subscribe = subscribe;
   vm.success = false;
+  vm.speaker = getSpeaker;
 
   $http.get('/site.json')
     .then(function (response) {
