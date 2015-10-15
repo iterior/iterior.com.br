@@ -15,7 +15,6 @@ h3 {
 #home {
     background: url(../img/iterior-logo.png) no-repeat left top;
     background-size: auto 73%;
-    transition: all 1.7s;
     height: 100%;
 }
 #home .valign {
@@ -88,10 +87,8 @@ h3 {
         background-size: 85% auto;
     }
 }
-
-#inner {
-  left: 50%;
-  margin-left: -100px; /* A metade de sua largura. */
-  position: absolute;
-  width: 200px; /* O valor que você desejar. */
+@media (min-width: 995px) and (max-width: 1200px) {
+    #home {
+        background-size: 85% auto;
+    }
 }
