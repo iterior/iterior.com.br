@@ -1,0 +1,975 @@
+[
+  {
+    "address" : "Rua Argentina, 251",
+    "email" : "daniel.gerep@gmail.com",
+    "name" : "Daniel Gerep",
+    "phone" : "123456"
+  },
+  {
+    "address" : "Rua Jácomo Rossi, 200",
+    "email" : "fernando.chimicoviaki@gmail.com",
+    "name" : "Fernando Chimicoviaki",
+    "phone" : "16991515651"
+  },
+  {
+    "address" : "Rua Antônio Rosa do Nascimento, 3265 - Jd.Palma - Franca/SP",
+    "email" : "bruno@devsuccess.com.br",
+    "name" : "Bruno Vinicius",
+    "phone" : "16992737052"
+  },
+  {
+    "address" : "Av. Rio Branco, 119 - Estação",
+    "email" : "pedroramon.dev@gmail.com",
+    "name" : "Pedro Ramon de Carvalho",
+    "phone" : "991873966"
+  },
+  {
+    "address" : "RUA JOSE BULHOES 391",
+    "email" : "wesleifelix@gmail.com",
+    "name" : "WESLEI RODRIGO FELIX",
+    "phone" : "16 37054123"
+  },
+  {
+    "address" : "Rua João Nestor dos Santos, 2061 - Franca/SP",
+    "email" : "rafaelhenrique.oliveira7@gmail.com",
+    "name" : "Rafael Henrique de Oliveira",
+    "phone" : "16 99246-9657"
+  },
+  {
+    "address" : "Rua Jamil Nassin Mellen, 2110",
+    "email" : "gabigomide@gmail.com",
+    "name" : "Gabriela Gomide de Oliveira",
+    "phone" : "16-99224-9907"
+  },
+  {
+    "address" : "Paulo Archetti 3115",
+    "email" : "guilhermefelipesilva@gmail.com",
+    "name" : "Guilherme Felipe da Silva Reis",
+    "phone" : "16993050462"
+  },
+  {
+    "address" : "Rua José Ovidio de Assis, 5161 Casa 28",
+    "email" : "thiagolelis@gmail.com",
+    "name" : "Thiago Lelis dos Santos",
+    "phone" : "16991017519"
+  },
+  {
+    "address" : "R: Justina de Andrade Nascimento, 210 - Pq. das Esmeraldas II, Franca SP, CEP 14406-637",
+    "email" : "maheldermelo@gmail.com",
+    "name" : "Mahelder Carvalho de Melo",
+    "phone" : "16991135635"
+  },
+  {
+    "address" : "Rua Cesar Ribeiro, 770 - JD Califórnia",
+    "email" : "gabrielbernalbarbosa@gmail.com",
+    "name" : "Gabriel Bernal Barbosa",
+    "phone" : "16 991849031"
+  },
+  {
+    "address" : "Rua: José Maria Jacinto Rebelo, 6211, Parque do Horto, Franca-SP",
+    "email" : "thayller@pxw.com.br",
+    "name" : "thayller vilela cintra",
+    "phone" : "16992924139"
+  },
+  {
+    "address" : "Rua Tenente Basílio José da Silva Leão, 803 Residencial Baldassari",
+    "email" : "brunohdbass@gmail.com",
+    "name" : "Bruno Oliveira",
+    "phone" : "1699171135"
+  },
+  {
+    "address" : "Rua Cabo Agnelo Ferreira Soares, 1996, Villagio Mundo Novo, Franca, SP",
+    "email" : "thiagogaldiano@gmail.com",
+    "name" : "Thiago Luiz Galdiano Leite",
+    "phone" : "16981369197"
+  },
+  {
+    "address" : "Washington Luiz, 5345 Centro itirapuã-SP",
+    "email" : "gabrielsmoraiss@gmail.com",
+    "name" : "Gabriel Silva de Morais",
+    "phone" : "16996142420"
+  },
+  {
+    "address" : "Rua Ana Maria Pinha Gonçalves, 641 - Parque Castelo - Franca/SP",
+    "email" : "willian.souzagonc@gmail.com",
+    "name" : "Willian Souza Gonçalves",
+    "phone" : "16 99796 4705"
+  },
+  {
+    "address" : "Franca-SP",
+    "email" : "vnz.taveira@gmail.com",
+    "name" : "Vinícius Vitoreli Figueiredo Taveira",
+    "phone" : "16992507327"
+  },
+  {
+    "address" : "Rua não precisa",
+    "email" : "eduardogimenesph@gmail.com",
+    "name" : "Eduardo Gimenes",
+    "phone" : "16992931492"
+  },
+  {
+    "address" : "Rua João Vilaça da Silva, 501",
+    "email" : "hugobcar@hotmail.com",
+    "name" : "Hugo Branquinho de Carvalho",
+    "phone" : "16 99734-9659"
+  },
+  {
+    "address" : "Rua: Santa Clotilde, 2231",
+    "email" : "ester.reis.ti@gmail.com",
+    "name" : "Ester Elida Reis",
+    "phone" : "16 99140 1761"
+  },
+  {
+    "address" : "arnold faria junqueira",
+    "email" : "leondesmachado@gmail.com",
+    "name" : "Leondes Machado",
+    "phone" : "16991444572"
+  },
+  {
+    "address" : "Rua Irenio Grecco 4100",
+    "email" : "jr_acn@yahoo.com.br",
+    "name" : "Antonio Carlos do Nascimento Júnior",
+    "phone" : "16992411372"
+  },
+  {
+    "address" : "Octavia Neiva Borges 749 Aeroporto 1",
+    "email" : "filipe.padua01@etec.sp.gov.br",
+    "name" : "Filipe Araujo de Padua",
+    "phone" : "9920489823"
+  },
+  {
+    "address" : "Rua Dorivaldo Chioca, 2955 - Jardim Luiza II",
+    "email" : "wendelprogrammer@gmail.com",
+    "name" : "Wendel Martimiano Gonçalves",
+    "phone" : "016 - 991765753"
+  },
+  {
+    "address" : "Rua Romualdo Magalhães Pirro 1750",
+    "email" : "lucaspiressimao@gmail.com",
+    "name" : "Lucas Pires Simão",
+    "phone" : "16 992 031 041"
+  },
+  {
+    "address" : "Rua Francisco Goia 481",
+    "email" : "rp.rafaelpinho@gmail.com",
+    "name" : "Rafael Pinho",
+    "phone" : "16988305204"
+  },
+  {
+    "address" : "rua dr jorge tibiriçá",
+    "email" : "brunobarbosa96@hotmail.com",
+    "name" : "Bruno Alípio Barbosa",
+    "phone" : "3591433905"
+  },
+  {
+    "email" : "agton@live.com",
+    "name" : "Agton Souza"
+  },
+  {
+    "address" : "Av Jaime Tellini, 4557 - Belvedere Bandeirante - Franca/SP",
+    "email" : "GelsonMRodrigues@hotmail.com",
+    "name" : "Gelson Mariano Rodrigues",
+    "phone" : "16999681697"
+  },
+  {
+    "address" : "Rua Gil José de Souza Jardim Maria Gabriela 3835",
+    "email" : "rodrigooler@icloud.com",
+    "name" : "Rodrigo Oler Batista Silva",
+    "phone" : "016993662159"
+  },
+  {
+    "address" : "Rua Luiz Ferreto",
+    "email" : "mariocsants@gmail.com",
+    "name" : "Mário César Santos",
+    "phone" : "16993178612"
+  },
+  {
+    "address" : "Avenida Major Elias Motta",
+    "email" : "heydergouveia@gmail.com",
+    "name" : "Heyder Gouveia",
+    "phone" : "16991066468"
+  },
+  {
+    "address" : "Rua Coronel Joaquim Barboza de Salles Pinto, 1675",
+    "email" : "contato@edermartins.com.br",
+    "name" : "Éder Martins",
+    "phone" : "16 98141 1341"
+  },
+  {
+    "address" : "Rua Deoclides Barbosa Leme, nº 640 - Santa Helena",
+    "email" : "gabriel.maniza@gmail.com",
+    "name" : "Gabriel Maniza Pereira",
+    "phone" : "016 9 9264-5532"
+  },
+  {
+    "address" : "Voluntário Otávio Magrin,5611 - Jardim Noemia, Franca - SP",
+    "email" : "guilhermeesteves@outlook.com.br",
+    "name" : "Guilherme Esteves",
+    "phone" : "16992917837"
+  },
+  {
+    "address" : "Eloy Francisco Mantovani, 401 - Jd. Ipanema",
+    "email" : "cristiano_3b@yahoo.com.br",
+    "name" : "Cristiano Facirolli",
+    "phone" : "16991337891'"
+  },
+  {
+    "address" : "Rua Manoel Batista Barbosa, 3485 - Residencial Zanneti - Franca SP",
+    "email" : "matheusmendess90@gmail.com",
+    "name" : "Matheus Mendes Silva",
+    "phone" : "(16) 99265-3000"
+  },
+  {
+    "address" : "Rua Dimas dos Santos Pereira, 435, Recanto Elimar 2, Franca, SP, Brasil.",
+    "email" : "gilsongimenes13@gmail.com",
+    "name" : "Gilson Gimenes Neves",
+    "phone" : "16 991313139"
+  },
+  {
+    "address" : "Rua Manoel Valim 507 - Vila Aparecida - Franca SP",
+    "email" : "ccorrea255@gmail.com",
+    "name" : "Cássio Bueno Vilela Corrêa",
+    "phone" : "16992333554"
+  },
+  {
+    "address" : "Rua Belém, 1156 - Jd. Brasilândia I",
+    "email" : "guiraldelli@gmail.com",
+    "name" : "Luis Henrique Vieira Guiraldelli",
+    "phone" : "16992145770"
+  },
+  {
+    "address" : "Av. Jaime Tellini, 4657 - Belvedere Bandeirante - Apto E34 - Franca-SP",
+    "email" : "fhalves99@yahoo.com.br",
+    "name" : "Flavio Henrique Alves",
+    "phone" : "16 9 8801-3575"
+  },
+  {
+    "email" : "marciogiaxa@gmail.com",
+    "name" : "Marcio Giaxa Marinheiro",
+    "phone" : "16991398189"
+  },
+  {
+    "address" : "Sérgio Casarotti Silva",
+    "email" : "brendol.lourencon@gmail.com",
+    "name" : "Brendol Lourençon",
+    "phone" : "16 999999999"
+  },
+  {
+    "address" : "Marechal Deodoro, 2675, Bairro São José, Franca-SP",
+    "email" : "caiosantosfreitas@hotmail.com",
+    "name" : "Caio Santos Freitas",
+    "phone" : "16992274373"
+  },
+  {
+    "address" : "R. Antônio Maranha, Vera Cruz",
+    "email" : "italojohnnydosanjos@gmail.com",
+    "name" : "Italo Johnny dos Anjos",
+    "phone" : "992596126"
+  },
+  {
+    "address" : "Professora Amália Pimentel 2394, Franca-SP",
+    "email" : "lucas@castejon.me",
+    "name" : "Lucas Castejon",
+    "phone" : "(16) 99335-3325"
+  },
+  {
+    "address" : "Rua: José Bulhões nº 351 Panorama Franca-SP",
+    "email" : "Rafael.Pessoni@outlook.com",
+    "name" : "Rafael Bertanha Pessoni",
+    "phone" : "16991419675"
+  },
+  {
+    "address" : "Hipólito Antônio Pinheiro, 3610 cep:14405-415 Franca - SP",
+    "email" : "thiago.matos@luizalabs.com",
+    "name" : "Thiago Henrique de Matos",
+    "phone" : "(16) 98134-8626"
+  },
+  {
+    "address" : "AV. Nicolau Del Monte, 3248",
+    "email" : "cristianconrado@gmail.com",
+    "name" : "Cristian da Silva Conrado",
+    "phone" : "16 993002682"
+  },
+  {
+    "address" : "RUA PROFESSORA MARIA FALEIROS - 1577,  VILA INDUSTRIAL, FR",
+    "email" : "luisfelipegodoi@live.com",
+    "name" : "LUIS FELIPE DE OLIVEIRA GODOI",
+    "phone" : "16992414959"
+  },
+  {
+    "address" : "Rua Paulino Liboni, 680",
+    "email" : "matheusportoo@gmail.com",
+    "name" : "Matheus Porto Garcia de Oliveira",
+    "phone" : "016982161762"
+  },
+  {
+    "address" : "Rua Luiz Batarra",
+    "email" : "tiagopenha.tr@gmail.com",
+    "name" : "Tiago Rodrigues Penha",
+    "phone" : "992841829"
+  },
+  {
+    "address" : "Alfonso Sanches Simon 541",
+    "email" : "edson@celuladigital.com.br",
+    "name" : "Edson Lopes Barbosa",
+    "phone" : "991017363"
+  },
+  {
+    "address" : "Rua Cyro Eduardo R. Faleiros, 982",
+    "email" : "rafaelqm@gmail.com",
+    "name" : "Rafael Querino Moreira",
+    "phone" : "16992361376"
+  },
+  {
+    "address" : "Avenida Santa Cruz, 3255",
+    "email" : "fernando.hfs94@gmail.com",
+    "name" : "Fernando Henrique Ferreira Soares",
+    "phone" : "16992872629"
+  },
+  {
+    "address" : "Rua Sebastiao Martins 80, Restinga-SP",
+    "email" : "flaviometalvale@gmail.com",
+    "name" : "Flávio Henrique Ferreira",
+    "phone" : "16 992084635"
+  },
+  {
+    "address" : "Rua Antônio lobosqui",
+    "email" : "mario.santana@jrti.com.br",
+    "name" : "Mario santana",
+    "phone" : "16982029400"
+  },
+  {
+    "address" : "R: Belo Horizonte, 2451 - Jd. Brasilândia, Franca S.P.",
+    "email" : "lennonpetrick@gmail.com",
+    "name" : "Lennon Petrick Spirlandelli",
+    "phone" : "(16) 99966-9278"
+  },
+  {
+    "email" : "gustavofernandesnn@gmail.com",
+    "name" : "Gustavo Fernandes"
+  },
+  {
+    "address" : "Rua Rosa Candelária Oler Soto, 1059, Apto 01",
+    "email" : "ryhan.brunello@ernetwork.com.br",
+    "name" : "Ryhan Gustavo Brunello",
+    "phone" : "016991900762"
+  },
+  {
+    "address" : "Rua Joaquim Gonçalves Ledo, 547, Jdm. Guanabara, Franca-SP",
+    "email" : "willyanluindayk@gmail.com",
+    "name" : "Willyan Luindayk Machado",
+    "phone" : "16 99315-2789"
+  },
+  {
+    "address" : "Rua Gabriel de Andrade 1240 Leporace III",
+    "email" : "lucas.mantovanig@gmail.com",
+    "name" : "Lucas Mantovani Gomes",
+    "phone" : "16 99251-8532"
+  },
+  {
+    "address" : "Rua Major Duarte, 218 AP 123",
+    "email" : "danilogarciamartins@hotmail.com",
+    "name" : "Danilo Garcia Martins",
+    "phone" : "(16)99278-8720"
+  },
+  {
+    "address" : "Rua Iracy Pereira Goulart, 3085",
+    "email" : "lucas@netradiobrasil.com.br",
+    "name" : "Lucas Ferreira Galvão",
+    "phone" : "1637048535"
+  },
+  {
+    "address" : "R: Carlos Henrique Junqueira de Andrade Filho, 410 - Jardim Paulistano 2",
+    "email" : "marcela_porteiro@yahoo.com.br",
+    "name" : "Marcela Rodrigues Porteiro",
+    "phone" : "16991685821"
+  },
+  {
+    "address" : "Humberto secchi 720 Bairro: santa efigenia",
+    "email" : "silas_silvask8@hotmail.com",
+    "name" : "Silas da Silva Gomes",
+    "phone" : "992765463"
+  },
+  {
+    "address" : "Rua Zeferino Ferraz, 787",
+    "email" : "claudaniloxavier@gmail.com",
+    "name" : "Claudanilo Eduardo de Lima Xavier",
+    "phone" : "016994616455"
+  },
+  {
+    "address" : "Rua Gabriel de Andrade 1240 leporace III",
+    "email" : "lucas.mantovanig@gmail.com",
+    "name" : "Lucas Mantovani Gomes",
+    "phone" : "16 99251-8532"
+  },
+  {
+    "address" : "Rual Alferes Manoel Marques de Carvalho 2521 Tropical Franca SP",
+    "email" : "tristao.luis@gmail.com",
+    "name" : "Luis Antonio Tristao",
+    "phone" : "16 9 8149 8563"
+  },
+  {
+    "address" : "davyd@engsolutions.com.br",
+    "email" : "davyd@engsolutions.com.br",
+    "name" : "Davyd Carlos Lopes",
+    "phone" : "16991534130"
+  },
+  {
+    "address" : "Paulino Liboni nº 891, São Joaquim, Franca-SP",
+    "email" : "bruno-hcs@hotmail.com",
+    "name" : "Bruno Henrique Costa de Souza",
+    "phone" : "16993426833"
+  },
+  {
+    "address" : "RUA VOLUNTARIOS DA FRANCA, 1311",
+    "email" : "JOSECARLOS@CONSORCIOLUIZA.COM.BR",
+    "name" : "JOSE CARLOS PEREIRA JUNIOR",
+    "phone" : "16981184228"
+  },
+  {
+    "address" : "Rua Diogo Rodrigues, 1860. Franca SP",
+    "email" : "lucasgr7@gmail.com",
+    "name" : "Lucas Garcia Ribeiro",
+    "phone" : "16 99332-8701"
+  },
+  {
+    "address" : "R: Chaoud Jorge Akari, n° 35",
+    "email" : "vini-spider-6@hotmail.com",
+    "name" : "Vinicius José Sebastião dos Santos",
+    "phone" : "16991364223"
+  },
+  {
+    "address" : "Rua martiminiano Francisco de Andrade, 1925",
+    "email" : "wanderwang@hotmail.com",
+    "name" : "Wander Wang Porto",
+    "phone" : "993468097"
+  },
+  {
+    "address" : "R. Antônio Cândido de Melo, 352. Vila Chico Júlio.",
+    "email" : "ilou.granzoto@gmail.com",
+    "name" : "Ilou Silva Granzoto",
+    "phone" : "016 993654959"
+  },
+  {
+    "address" : "Rua Jose Josué da Silva, 799",
+    "email" : "kairoantonio@gmail.com",
+    "name" : "Kairo Antonio Bonamin",
+    "phone" : "16991789353"
+  },
+  {
+    "address" : "R Monsenhor Rosa 2475 - Centro - Franca-SP",
+    "email" : "alinelopes.lopes68@gmail.com",
+    "name" : "Aline A. Lopes Matias",
+    "phone" : "16993631876"
+  },
+  {
+    "address" : "Rua José Dias, 241 Bairro Peixotos - Cássia, MG 37980-000",
+    "email" : "paulopereira4540@gmail.com",
+    "name" : "Paulo Luciano Pereira",
+    "phone" : "35 91737802"
+  },
+  {
+    "address" : "Rua Antônio Bernardes Pinto 4167 Vila Imperador",
+    "email" : "eduardo.ferreira@luizalabs.com",
+    "name" : "Eduardo Garcia Ferreira",
+    "phone" : "16 99967-2161"
+  },
+  {
+    "address" : "Rua Antonio Pedro, 3149",
+    "email" : "rafael.a.batista@gmail.com",
+    "name" : "Rafael Alves Batista",
+    "phone" : "16991842772"
+  },
+  {
+    "address" : "Rua Dorivaldo Chioca, 2955 - Jardim Luiza II",
+    "email" : "wendelprogrammer@gmail.com",
+    "name" : "Wendel Martimiano Gonçalves",
+    "phone" : "016 - 991765753"
+  },
+  {
+    "address" : "Rua: Antonio Lobosqui",
+    "email" : "mario.santana@jrti.com.br",
+    "name" : "Mario Santana",
+    "phone" : "16982029400"
+  },
+  {
+    "address" : "Av. Lizete Coelho Lourenço 2530",
+    "email" : "viniciuslopesaz@gma.com",
+    "name" : "Vinicius Lopes de Azevedo",
+    "phone" : "16991348504"
+  },
+  {
+    "address" : "rua jose martins",
+    "email" : "allefsousa_1@hotmail.com",
+    "name" : "allef sousa santos",
+    "phone" : "991580393"
+  },
+  {
+    "address" : "jose franchini n. 2403",
+    "email" : "petterson_sist@hotmail.com",
+    "name" : "Petterson Pessoni Diogo",
+    "phone" : "16993003086"
+  },
+  {
+    "address" : "Rua Cassiano Ricardo, 481 - Nova Franca - Franca/SP",
+    "email" : "murilofurq@gmail.com",
+    "name" : "Murilo Ferreira Urquiza",
+    "phone" : "1699385207"
+  },
+  {
+    "address" : "Rua Hermogenes de Mello, 440",
+    "email" : "keynellmaycon@gmail.com",
+    "name" : "Keynell Maycon Oliveira Santos",
+    "phone" : "16 99188-1265"
+  },
+  {
+    "address" : "Avenida Cesar Martins Pirajá, 1259",
+    "email" : "vinicius.mussak@outlook.com",
+    "name" : "Vinicius Mussak",
+    "phone" : "(16)99208-8288"
+  },
+  {
+    "address" : "Rua Presidente Kennedy 1363 Vila Flores Franca-SP",
+    "email" : "cairofal@gmail.com",
+    "name" : "Cairo Faleiros de Figueiredo",
+    "phone" : "(16) 98208-5607"
+  },
+  {
+    "address" : "Rua General Teles, 1465 - 12° andar - Sala 123",
+    "email" : "alex.ayub@luizalabs.com",
+    "name" : "Alex Ayub de Oliveira",
+    "phone" : "16 992337655"
+  },
+  {
+    "address" : "Rua Guilhermino Modesto de Melo, 5760, Centro Itirapuã-SP Cep 14.420-000",
+    "email" : "michel.ribeiro@luizalabs.com",
+    "name" : "Michel David de Assis Ribeiro",
+    "phone" : "16 981015074"
+  },
+  {
+    "address" : "R. Virgínio Pereira, 1650 - Franca - SP",
+    "email" : "rmbertoni@yahoo.com.br",
+    "name" : "Rafael Malta Bertoni",
+    "phone" : "(16) 9.9998-8749"
+  },
+  {
+    "address" : "Av. Nelson Japaulo 1873; Jd Luiza 1; Franca-SP",
+    "email" : "fernandoagribeiro@gmail.com",
+    "name" : "Fernando A Ribeiro",
+    "phone" : "(016)98114-1214"
+  },
+  {
+    "address" : "Rua Coronel Antonio Barbosa Lima 159, Vila Nicácio, Franca/SP",
+    "email" : "manamachado8@gmail.com",
+    "name" : "Maná Machado",
+    "phone" : "16991531137"
+  },
+  {
+    "address" : "Rua Francisco Avelino Costa Gimenes, 1251, Jd. Portinari",
+    "email" : "r.santos2507@gmail.com",
+    "name" : "Rafael Magalhães dos Santos",
+    "phone" : "+55 (016)99120-3753"
+  },
+  {
+    "address" : "Rua Venezuela, 1450",
+    "email" : "livio.cunha@outlook.com",
+    "name" : "Lívio Adriano Cunha",
+    "phone" : "16992836679"
+  },
+  {
+    "address" : "Felipe de Oliveira Bonfim",
+    "email" : "tiagu.almeida@gmail.com",
+    "name" : "Tiago Almeida",
+    "phone" : "16992195100"
+  },
+  {
+    "address" : "Irenio Grecco 4587",
+    "email" : "cairo.cst@gmail.com",
+    "name" : "Cairo Conrado Costa",
+    "phone" : "(16)99335-9465"
+  },
+  {
+    "address" : "Av. Professor Nicolau Delmonte",
+    "email" : "anilton.francisco@gmail.com",
+    "name" : "Anilton Francisco de Morais Junior",
+    "phone" : "992647433"
+  },
+  {
+    "address" : "Rua paulo gama, 57 - Cássia - MG",
+    "email" : "marcoscentronef@gmail.com",
+    "name" : "Marcos Centrone Ferreira",
+    "phone" : "35 91100229"
+  },
+  {
+    "address" : "São Paulo",
+    "email" : "rafaelbarini@uol.com.br",
+    "name" : "Rafael Barini",
+    "phone" : "11981614013"
+  },
+  {
+    "address" : "Vitor Meirelles Lima",
+    "email" : "danilocesarmendes@gmail.com",
+    "name" : "Danilo Cesar Mendes",
+    "phone" : "991001800"
+  },
+  {
+    "address" : "Rua Antônio Garcia, 5285",
+    "email" : "daviemanoel@gmail.com",
+    "name" : "Davi Silva",
+    "phone" : "997088003"
+  },
+  {
+    "address" : "Rua Maria Marta Junqueira, 561 - Pq. Dom Pedro - CEp 14409-221 - Franca/SP",
+    "email" : "tanaka@tanaka.pro.br",
+    "name" : "Luís Carlos Tanaka",
+    "phone" : "(16) 99218-3336"
+  },
+  {
+    "address" : "6991",
+    "email" : "viniciuslopesaz@gmail.com",
+    "name" : "Vinícius Lopes Azevedo",
+    "phone" : "16991348504"
+  },
+  {
+    "address" : "Rua Manif Elias Pedro, 2970 - Prolongamento Ângela Rosa",
+    "email" : "heloisa_g@hotmail.com",
+    "name" : "Heloisa Gonçalves",
+    "phone" : "(16) 982280789"
+  },
+  {
+    "address" : "Avenida Presidente Vargas, 2121 - Sala 506 - Ribeirão Preto/SP",
+    "email" : "luiz.carlos@targetsis.com.br",
+    "name" : "Luiz Carlos Romani Filho",
+    "phone" : "16981340012"
+  },
+  {
+    "address" : "Rua Elivelton Antônio de souza, 4619 - Franca SP",
+    "email" : "noemia.toledo@gmail.com",
+    "name" : "Noemia Lopes Toledo",
+    "phone" : "16992120113"
+  },
+  {
+    "address" : "Rua José Marques Garcia 1382",
+    "email" : "guilhermecontatos12@gmail.com",
+    "name" : "Guilherme Felipe de Sousa",
+    "phone" : "16999993940"
+  },
+  {
+    "address" : "Av. Rio Amazonas, 1405 - B03 - A105",
+    "email" : "fabricio@fabriciolribeiro.com",
+    "name" : "Fabrício Lombardi Ribeiro",
+    "phone" : "16 98185-2222"
+  },
+  {
+    "address" : "Rua Dr. Jose Eduardo Jose Vieira Palma, 557 - Cravinhos - SP",
+    "email" : "m-antonio-ribeiro@uol.com.br",
+    "name" : "Marco Antonio Ribeiro",
+    "phone" : "16 99770 1975"
+  },
+  {
+    "address" : "Rua Jose Carmelito do Carmo 811",
+    "email" : "joaogabrielamaral.engsolutions@gmail.com",
+    "name" : "Joao Gabriel Amaral",
+    "phone" : "16993358123"
+  },
+  {
+    "address" : "rua do comércio 1650 sala 43",
+    "email" : "fabio.moreno@fcmoreno.com.br",
+    "name" : "Fabio Coutinho Moreno",
+    "phone" : "37202094"
+  },
+  {
+    "address" : "Rua Antonio Loureiro, 594",
+    "email" : "nelsonborgesjr@hotmail.com",
+    "name" : "Nelson Borges",
+    "phone" : "11 981086536"
+  },
+  {
+    "address" : "Tereza T Palermo 3094",
+    "email" : "fabricio.pereirab@gmail.com",
+    "name" : "Fabrício Pereira Braga",
+    "phone" : "992849681"
+  },
+  {
+    "address" : "Rua Venezuela, 1450",
+    "email" : "livio.cunha@outlook.com",
+    "name" : "Lívio Cunha",
+    "phone" : "16 992836679"
+  },
+  {
+    "address" : "Av. Presidente Vargas, 2121 - Sala 506 - Ribeirão Preto/SP",
+    "email" : "luiz.carlos@targetsis.com.br",
+    "name" : "Luiz Carlos Romani Filho",
+    "phone" : "16 98134-0012"
+  },
+  {
+    "address" : "Rua José Bonifácio 615 apto 11 CEP: 14610-000",
+    "email" : "sergio.resende@gmail.com",
+    "name" : "Sérgio Luiz Resende",
+    "phone" : "16 999990745"
+  },
+  {
+    "address" : "Rua Rosana Poppi Norberto, 570, Leporace I.",
+    "email" : "guilhermemalaquiasf@gmail.com",
+    "name" : "Guilherme Malaquias Ferreira",
+    "phone" : "16992518825"
+  },
+  {
+    "address" : "Rua João Urias Pimenta, 4755",
+    "email" : "hernani.pardini@gmail.com",
+    "name" : "Hernani Pardini Neto",
+    "phone" : "16991235630"
+  },
+  {
+    "address" : "Rua Luís Antônio de Souza",
+    "email" : "jhonatan.henrique23@gmail.com",
+    "name" : "Jhonatan Henrique da Silva",
+    "phone" : "993389361"
+  },
+  {
+    "address" : "Raimundo de Oliveira Franca - SP",
+    "email" : "joaomstefani@gmail.com",
+    "name" : "João Marcos Rodrigues Stefani",
+    "phone" : "988379905"
+  },
+  {
+    "address" : "Rua Miguel Fernando Pianura, 2055",
+    "email" : "vhcastanheiro@gmail.com",
+    "name" : "Victor Castanheiro",
+    "phone" : "16981060216"
+  },
+  {
+    "address" : "Rua: Erico Verissimo Nº 1080",
+    "email" : "granzotiivan@gmail.com",
+    "name" : "Ivan Vinicius Granzoti",
+    "phone" : "16 99371-8883"
+  },
+  {
+    "address" : "Rua Antônio brentini 1031",
+    "email" : "wesleydrum10@hotmail.com",
+    "name" : "Wesley Carlos de Oliveira",
+    "phone" : "16993404154"
+  },
+  {
+    "address" : "Rua Newton Rodrigues de Oliveira, 680 Franca-SP",
+    "email" : "erico.cintra@gmail.com",
+    "name" : "Érico Cintra Monteiro",
+    "phone" : "16 98824-9454"
+  },
+  {
+    "address" : "Rua Gabriel de Andrade 1240 leporace III",
+    "email" : "lucas.mantovanig@gmail.com",
+    "name" : "lucas mantovani gomes",
+    "phone" : "(16) 99251-8532"
+  },
+  {
+    "address" : "Rua Terezina 1171",
+    "email" : "lcs.bachur@gmail.com",
+    "name" : "LUCAS MAIA BACHUR",
+    "phone" : "16992498577"
+  },
+  {
+    "address" : "R Prof Suzana Ribeiro Sandobal",
+    "email" : "ricardo@sandiegoschool.com.br",
+    "name" : "Ricardo Castanheira",
+    "phone" : "55-16-991523828"
+  },
+  {
+    "address" : "Eng. Oliveira Pinheiros 1374 Jd. Portinari / Franca",
+    "email" : "adilsonadriano90@yahoo.com.br",
+    "name" : "Adilson Adriano Pinto",
+    "phone" : "16993189260"
+  },
+  {
+    "address" : "Rua Couto Magalhães 1457",
+    "email" : "marcus@engsolutions.com.br",
+    "name" : "Marcus Vinicius Mandara da Silva",
+    "phone" : "(16) 99161-9090"
+  },
+  {
+    "address" : "Rua Diogo Antônio Sanches, 2759, Jdm Luiza Franca -SP",
+    "email" : "tiago@ti2.net.br",
+    "name" : "Tiago Domingos Cipriano",
+    "phone" : "16 99189 0566"
+  },
+  {
+    "address" : "Avenida Santa Cruz, 3255",
+    "email" : "douglas@consorcioluiza.com.br",
+    "name" : "Douglas Andrade de Oliveira",
+    "phone" : "16991785697"
+  },
+  {
+    "address" : "Jovita de Melo, 850, Franca, SP",
+    "email" : "bmsatierf@gmail.com",
+    "name" : "Bruno Freitas",
+    "phone" : "16-991218998"
+  },
+  {
+    "address" : "Acir Alves da Silva 1772 Elimar II",
+    "email" : "dieniffer@live.com",
+    "name" : "Dieniffer Sabrina da Silva",
+    "phone" : "16 993651194"
+  },
+  {
+    "address" : "Av Dom Pedro l 5706",
+    "email" : "luann.rodrigos@gmail.com",
+    "name" : "Luann Rodrigo de Paulo dos Santos",
+    "phone" : "16994557474"
+  },
+  {
+    "address" : "Avenida Ivete Vargas 1625",
+    "email" : "guilherme_peixoto_@hotmail.com",
+    "name" : "Guilherme Peixoto Duarte",
+    "phone" : "16992022810"
+  },
+  {
+    "address" : "Atílio Marconi 751 Jd Aeroporto I",
+    "email" : "lerry.sud@hotmail.com",
+    "name" : "Lerry Augusto Pirani",
+    "phone" : "016992022726"
+  },
+  {
+    "address" : "R: Francisco Maritan nº 281 | Jardim Esmeralda | Franca",
+    "email" : "vitoralexandre.info@gmail.com",
+    "name" : "Vitor Alexandre",
+    "phone" : "16991613449"
+  },
+  {
+    "address" : "Ribeirão Preto-SP",
+    "email" : "contato@victorsato.com",
+    "name" : "Victor Sato",
+    "phone" : "16-98193-4546"
+  },
+  {
+    "address" : "av caramuru, 2450, torre 4, ap 03, ribeirao preto - sp",
+    "email" : "ivanscher@gmail.com",
+    "name" : "ivan suzart scher",
+    "phone" : "16993326372"
+  },
+  {
+    "address" : "Rua Francisco Tardia, 1889, Franca",
+    "email" : "edmilson.fcamara@magazineluiza.com.br",
+    "name" : "Edmilson Dourado",
+    "phone" : "16997639896"
+  },
+  {
+    "address" : "rua Oreste Tristao 956",
+    "email" : "luis.hsamancio@gmail.com",
+    "name" : "Luis Henrique da Silva Amancio",
+    "phone" : "16993116607"
+  },
+  {
+    "address" : "Rua: joanita alves cardoso toledo, Nº 246, Bairro: Chico Julio",
+    "email" : "william@cloudwalk.io",
+    "name" : "William Roberto Garcia Tavares",
+    "phone" : "(16)99401-5692"
+  },
+  {
+    "address" : "Rua quinze de novembro, 3509 - São Carlos, SP",
+    "email" : "tiaguinhor@gmail.com",
+    "name" : "Tiago Rodrigo Calógero",
+    "phone" : "16981637220"
+  },
+  {
+    "address" : "R. Virgínio Pereira, 1650",
+    "email" : "rmbertoni@yahoo.com.br",
+    "name" : "Rafael Malta Bertoni",
+    "phone" : "16999988749"
+  },
+  {
+    "address" : "Rua João Batista D'elia, 902",
+    "email" : "jorgeflh@gmail.com",
+    "name" : "Jorge Luís de Andrade Filho",
+    "phone" : "16999995919"
+  },
+  {
+    "address" : "Horácio Otávio Gonçalves",
+    "email" : "saamuel.faria@gmail.com",
+    "name" : "Samuel Faria",
+    "phone" : "16993240610"
+  },
+  {
+    "address" : "Horácio Otávio Gonçalves 1751",
+    "email" : "saamuel.faria@gmail.com",
+    "name" : "Samuel Faria",
+    "phone" : "16993240610"
+  },
+  {
+    "address" : "Vila Almir,  Casa 4  - Centro",
+    "email" : "andre.biousp@gmail.com",
+    "name" : "André de Souza Rodrigues",
+    "phone" : "(16) 99177 8004"
+  },
+  {
+    "address" : "luiz vasconcelos pelizarro 301",
+    "email" : "michelspirlandeli10@gmail.com",
+    "name" : "michel spirlandeli dos santos",
+    "phone" : "992845948"
+  },
+  {
+    "address" : "Rua José bonifácio 615 apto 11 CEP:14610-000 Ipuã - SP",
+    "email" : "sergio.resende@gmail.com",
+    "name" : "Sérgio Luiz Resende",
+    "phone" : "16 99999 0745"
+  },
+  {
+    "address" : "Avenida Rio Amazonas, 1405",
+    "email" : "cassiothadeu@gmail.com",
+    "name" : "Cássio Thadeu Oliveira Souza",
+    "phone" : "(16)98140-1137"
+  },
+  {
+    "address" : "Rua Joaquim Gonçalves Ledo, 547, Jdm Guanabara",
+    "email" : "willyanluindayk@gmail.com",
+    "name" : "Willyan Luindayk Machado",
+    "phone" : "16 993152789"
+  },
+  {
+    "address" : "Rua Dr Waldemar César Caleiro, 892, Aeroporto I, Franca, São Paulo",
+    "email" : "paulo.sorrentino@outlook.com",
+    "name" : "Paulo Vinicius Pacheco Sorrentino",
+    "phone" : "16981377784"
+  },
+  {
+    "address" : "Rua Fortaleza 720,  Jardim Brasilandia",
+    "email" : "saulezequiel29@hotmail.com",
+    "name" : "Saul Ezequiel Ambrosio",
+    "phone" : "016 992724857"
+  },
+  {
+    "address" : "r Magid Calixto, 2700",
+    "email" : "leobsantuci@gmail.com",
+    "name" : "Leonardo Balduino Santuci",
+    "phone" : "16 99219-3616"
+  },
+  {
+    "address" : "Rua Francisco Avelino Costa Gimenes, 1251, Jd. Portinari",
+    "email" : "r.santos2507@gmail.com",
+    "name" : "Rafael Magalhães dos Santos",
+    "phone" : "(16)99120-3753"
+  },
+  {
+    "address" : "rua Onofre Raimundo Braga nº2690 residencial Palermo",
+    "email" : "migeice88@gmail.com",
+    "name" : "Michelle Geice Gonçalves Meletti",
+    "phone" : "16-98835.2695"
+  },
+  {
+    "address" : "Av. do café, 1715, Vila Amelia, Ribeirão Preto - SP",
+    "email" : "dougfeltrim@gmail.com",
+    "name" : "Douglas Feltrim",
+    "phone" : "19-996627968"
+  },
+  {
+    "address" : "Washington Luiz, 5345, Centro, Itirapuã-SP",
+    "email" : "gabrielsmoraiss@gmail.com",
+    "name" : "Gabriel Silva de Moraiss",
+    "phone" : "16996142420"
+  },
+  {
+    "address" : "Niteroi - RJ",
+    "email" : "contato@victorfontes.com",
+    "name" : "Victor Fontes Costa",
+    "phone" : "21999257176"
+  }
+]
