@@ -64,11 +64,9 @@ var SubscribesController = {
     }
     Subscribe.find(query, function (err, subscribes) {
       subscribes.forEach(function (err, subscribe) {
-        var s = new Subscribe(subscribe);
-        if (!subscribe.hasOwnProperty('sended_at')) {
-          s.send_confirmation();
-          s.sended_at = new Date();
-          s.save();
+        subscribe.send_confirmation();
+        subscribe.sended_at = new Date();
+        subscribe.save();
         }
       });
     });
