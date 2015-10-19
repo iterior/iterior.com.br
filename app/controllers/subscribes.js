@@ -61,10 +61,10 @@ var SubscribesController = {
   },
   send: function (req, res) {
     Subscribe.find({}, function (err, subscribes) {
-      subscribes.forEach(function (err, subscribe) {
+      subscribes.forEach(function (subscribe) {
         console.log('subscribe object', subscribe);
         Subscribe.findOne({email: subscribe.email}, function (err, object) {
-          console.log('object send list', object);
+          console.log('object send list', subscribe);
           console.log(object);
           if (object) {
             if(subscribe.hasOwnProperty('sended_at')) {
