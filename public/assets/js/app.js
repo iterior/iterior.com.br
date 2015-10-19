@@ -1,21 +1,26 @@
 'use strict';
 
 angular
-  .module('app', [])
+  .module('app', [
+    'ngResource'
+    ])
   .controller('AppCtrl', AppCtrl)
-  .factory('SubscribeFactory', SubscribeFactory);
+  .factory('Subscribe', Subscribe);
 
-AppCtrl.$inject = ['$http', 'SubscribeFactory'];
+AppCtrl.$inject = ['$http', 'Subscribe'];
 
-function AppCtrl ($http, SubscribeFactory) {
+function AppCtrl ($http, Subscribe) {
   var vm = this;
   vm.site = {};
   vm.speakers = [];
   vm.talks = [];
   vm.partners = [];
   vm.supports = [];
-  vm.subscribe = subscribe;
-  vm.success = false;
+  vm.send = send;
+  vm.status = {
+    success: false,
+    duplicate: false
+  };
   vm.speaker = getSpeaker;
 
   $http.get('/site.json')
@@ -49,33 +54,21 @@ function AppCtrl ($http, SubscribeFactory) {
     return speaker;
   }
 
-  function subscribe () {
-    SubscribeFactory.save(vm.person);
-    vm.success = true;
-    var url = 'http://getsimpleform.com/messages/ajax?form_api_token=f8742ce7d1a511b804312f46cb11db8d';
-    var config = {
-      dataType: 'jsonp'
-    };
-
-    $http.post(url, vm.person, config)
-      .then(function (response) {
-        console.log(response);
-      },
-      function (err) {
-        console.error('Send error', err);
-      });
+  function send () {
+    var subscribe = new Subscribe(vm.subscribe);
+    subscribe.$save(function (data, putResponseHeaders) {
+      console.log(data);
+      if (data.code === 11000) {
+        vm.status.duplicate = true;
+        vm.status.success = false;
+      } else {
+        vm.status.success = true;
+        vm.status.duplicate = false;
+      }
+    });
   }
 }
 
-function SubscribeFactory ($http) {
-  var SubscribeFactory = {
-    save: function (data) {
-      $http.post('/subscribe', data)
-        .then(function (response) {
-          if (!response) console.error(response.error);
-          var data = response.data;
-        });
-    }
-  };
-  return SubscribeFactory;
+function Subscribe ($resource) {
+  return $resource('/subscribes/:email', null);
 }
