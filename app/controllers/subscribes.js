@@ -67,15 +67,17 @@ var SubscribesController = {
     }
     Subscribe.find(query, function (err, subscribes) {
       subscribes.forEach(function (err, subscribe) {
-        var s = new Subscribe({
-          name: subscribe.name,
-          email: subscribe.email,
-          phone: subscribe.phone,
-          address: subscribe.address
-        });
-        s.send_confirmation();
-        s.sended_at = new Date().toISOString();
-        s.save();
+        if (subscribe.email) {
+          var s = new Subscribe({
+            name: subscribe.name,
+            email: subscribe.email,
+            phone: subscribe.phone,
+            address: subscribe.address
+          });
+          s.send_confirmation();
+          s.sended_at = new Date().toISOString();
+          s.save();
+        }
       });
     });
   }
