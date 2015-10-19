@@ -11,7 +11,7 @@ var SubscribesController = {
       phone: data.phone,
       address: data.address,
       created_at: new Date().toISOString(),
-      subscribe.sended_at = new Date().toISOString();
+      sended_at: new Date().toISOString();
     }).save(function (err, object) {
       if (err) res.json(err.toJSON());
 
