@@ -1,5 +1,4 @@
 var path = require('path');
-var env = require('../env');
 var mongoose = require('mongoose');
 var mandrill = require('mandrill-api/mandrill');
 
@@ -9,6 +8,6 @@ VIEWS_PATH = path.join(__dirname, 'views');
 
 ROUTES_ROOT = path.join(__dirname, '/routes');
 
-exports.db = mongoose.connect(process.env.MONGOLAB_HOST || env.MONGOLAB_HOST);
+exports.db = mongoose.connect(process.env.MONGOLAB_HOST);
 
-exports.mandrill_client = new mandrill.Mandrill(process.env.MANDRILL_API_KEY || env.MANDRILL_API_KEY);
+exports.mandrill_client = new mandrill.Mandrill(process.env.MANDRILL_API_KEY);
