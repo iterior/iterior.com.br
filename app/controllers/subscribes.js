@@ -10,13 +10,14 @@ var SubscribesController = {
       email: data.email,
       phone: data.phone,
       address: data.address,
-      created_at: new Date().toISOString(),
-      sended_at: new Date().toISOString();
+      created_at: new Date().toISOString()
     }).save(function (err, object) {
       if (err) res.json(err.toJSON());
 
       if (object) {
         object.send_confirmation();
+        object.sended_at = new Date().toISOString();
+        object.save();
         res.json(object.toJSON());
       };
     });
