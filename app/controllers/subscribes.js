@@ -90,7 +90,10 @@ var SubscribesController = {
           ];
           send_mail({ name: subscribe.name, email: subscribe.email }, 'Inscrição Confirmada', body.join(''));
           subscribe.sended_at = new Date().toISOString();
-          subscribe.save();
+          subscribe.save(function (err, data) {
+            if (err) console.log('err', err.stack);
+            if (data) console.log(data);
+          });
         }
       });
     });

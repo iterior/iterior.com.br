@@ -1,7 +1,7 @@
 var mongoose = require('../settings').db;
 var send_mail = require('../mailers/mandrill');
 
-var subscribeShema = mongoose.Schema({
+var subscribeSchema = mongoose.Schema({
   name: String,
   email: { type: String, unique: true },
   phone: String,
@@ -12,7 +12,7 @@ var subscribeShema = mongoose.Schema({
   confirmed_at: Date
 });
 
-subscribeShema.methods.send_confirmation = function () {
+subscribeSchema.methods.send_confirmation = function () {
   var body = [
     '<html>',
     '<head>',
@@ -35,7 +35,7 @@ subscribeShema.methods.send_confirmation = function () {
   return send_mail(this, 'Confirmação de Inscrição', body.join(''));
 };
 
-subscribeShema.methods.send_confirmated = function () {
+subscribeSchema.methods.send_confirmated = function () {
   var body = [
     '<html>',
     '<head>',
@@ -56,4 +56,4 @@ subscribeShema.methods.send_confirmated = function () {
 };
 
 
-module.exports = mongoose.model('subscribes', subscribeShema);
+module.exports = mongoose.model('subscribes', subscribeSchema);
