@@ -64,6 +64,8 @@ var SubscribesController = {
       console.log('err send list', err);
       console.log('subscribes send list', subscribes);
       subscribes.forEach(function (err, subscribe) {
+        console.log('subscribe object err', err);
+        console.log('subscribe object', subscribe);
         Subscribe.findOne({email: subscribe.email}, function (err, object) {
           console.log('object send list', object);
           if (err) console.log('err object send list', err.stack);
