@@ -1,2 +1,2 @@
-# iterior.github.com
-iTerior landing page
+# iTerior
+iTerior Conference website.
