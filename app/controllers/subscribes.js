@@ -67,7 +67,6 @@ var SubscribesController = {
         subscribe.send_confirmation();
         subscribe.sended_at = new Date();
         subscribe.save();
-        }
       });
     });
   }
