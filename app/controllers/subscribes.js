@@ -55,6 +55,22 @@ var SubscribesController = {
         });
       });
     });
+  },
+  send: function (req, res) {
+    var email = req.params['email'];
+    var query = {};
+    if (email) {
+      query.email = email;
+    }
+    Subscribe.find(query, function (err, subscribes) {
+      subscribes.forEach(function (err, subscribe) {
+        if (!subscribe.hasOwnProperty('sended_at')) {
+          subscribe.send_confirmation();
+          subscribe.sended_at = new Date();
+          subscribe.save();
+        }
+      });
+    });
   }
 };
 

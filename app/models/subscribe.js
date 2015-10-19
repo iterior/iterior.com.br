@@ -8,6 +8,7 @@ var subscribeShema = mongoose.Schema({
   address: String,
   company: String,
   created_at: Date,
+  sended_at: Date,
   confirmed_at: Date
 });
 
