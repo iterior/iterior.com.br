@@ -10,7 +10,8 @@ var SubscribesController = {
       email: data.email,
       phone: data.phone,
       address: data.address,
-      created_at: new Date().toISOString()
+      created_at: new Date().toISOString(),
+      subscribe.sended_at = new Date().toISOString();
     }).save(function (err, object) {
       if (err) res.json(err.toJSON());
 
@@ -24,9 +25,9 @@ var SubscribesController = {
     var email = req.params['email'];
     Subscribe.findOne({email: email}, function (err, subscribe) {
       if (err) {
-         res.render('subscribes/form_success', { status: 'Cadastro não encontrado' });
+         res.render('subscribes/form_success', { status: 'Cadastro não encontrado.' });
        } else if (subscribe.hasOwnProperty('confirmed_at')) {
-         res.render('subscribes/form_success', { status: 'Cadastro já confirmado' });
+         res.render('subscribes/form_success', { status: 'Cadastro já confirmado.' });
        } else {
         res.render('subscribes/form', {subscribe: subscribe});
       }
@@ -46,12 +47,12 @@ var SubscribesController = {
 
       if (company) {
         subscribe.company = company;
-        subscribe.confirmed_at = new Date();
+        subscribe.confirmed_at = new Date().toISOString();
       }
 
       subscribe.save(function (err, data) {
         res.render(template_name, {
-          status: 'Cadastro atualizado com sucesso', subscribe: data
+          status: 'Cadastro atualizado com sucesso!', subscribe: data
         });
       });
     });
@@ -65,7 +66,7 @@ var SubscribesController = {
     Subscribe.find(query, function (err, subscribes) {
       subscribes.forEach(function (err, subscribe) {
         subscribe.send_confirmation();
-        subscribe.sended_at = new Date();
+        subscribe.sended_at = new Date().toISOString();
         subscribe.save();
       });
     });
