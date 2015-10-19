@@ -23,7 +23,7 @@ subscribeSchema.methods.send_confirmation = function () {
     'Olá ' + this.name + ', obrigado por se inscrever.',
     '<p>',
     'Com vagas limitadas nós realmente estamos contando com a sua presença.',
-    'Caso haja algum imprevisto, por favor <a href="mailto:contato@iterior.com.br">deixe-nos saber</a>.',
+    'Caso haja algum imprevisto, por favor <a href="mailto:contato@iterior.com.br">nos avise</a>.',
     '</p>',
     '<p>Mudamos alguns campos de inscrição, por favor atualize <a href="http://iterior.com.br/subscribes/' + this.email + '" target="_blank">seu dados aqui</a>.</p>',
     '<br>',
