@@ -67,6 +67,7 @@ var SubscribesController = {
         Subscribe.findOne({email: subscribe.email}, function (err, object) {
           if (err) console.log('err', err.stack);
           if (object) {
+            console.log('object', object);
             if(subscribe.hasOwnProperty('sended_at')) {
               object.send_confirmation();
               object.sended_at = new Date().toISOString();
