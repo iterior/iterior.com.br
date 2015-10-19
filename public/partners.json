@@ -1,8 +1,8 @@
 [
     {
-        "_id": "luizalabs",
+        "_id": "fasternet",
         "kind": "gold",
-        "name":  "luizalabs",
+        "name":  "FasterNet",
         "site": "http://luizalabs.com",
         "avatar": "partners/luizalabs.png"
     }

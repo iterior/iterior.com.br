@@ -78,7 +78,7 @@
 		</div>
 	</section>
 	<section id="partners" class="center-align">
-		<div class="hide">
+		<div class="section">
 			<h2 class="center-align">Patrocinadores</h2>
 			<div class="container">
 				<div class="partner-list row">
@@ -92,14 +92,16 @@
 				</div>
 			</div>
 		</div>
-		<h2 class="center-align">Apoio</h2>
-		<div class="container">
-			<div class="support-list row">
-				<div id="support-{{ ::support._id }}" class="support-item col s12 m6 l3" ng-repeat="support in vm.supports | orderBy:'name'">
-					<div class="l-box">
-						<a href="{{ ::support.site }}" target="_blank" title="{{ ::support.name }}" class="grey-text grey-darken-2-text">
-							<img src="/assets/img/{{::support.avatar}}" alt="{{ ::support.name }}" class="responsive-img">
-						</a>
+		<div class="section">
+			<h2 class="center-align">Apoio</h2>
+			<div class="container">
+				<div class="support-list row">
+					<div id="support-{{ ::support._id }}" class="support-item col s12 m6 l3" ng-repeat="support in vm.supports | orderBy:'name'">
+						<div class="l-box">
+							<a href="{{ ::support.site }}" target="_blank" title="{{ ::support.name }}" class="grey-text grey-darken-2-text">
+								<img src="/assets/img/{{::support.avatar}}" alt="{{ ::support.name }}" class="responsive-img">
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
