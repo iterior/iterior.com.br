@@ -26,10 +26,11 @@ var SubscribesController = {
     var email = req.params['email'];
     Subscribe.findOne({email: email}, function (err, subscribe) {
       if (err) {
-         res.render('subscribes/form_success', { status: 'Cadastro não encontrado.' });
-       } else if (subscribe.hasOwnProperty('confirmed_at')) {
-         res.render('subscribes/form_success', { status: 'Cadastro já confirmado.' });
-       } else {
+        res.render('subscribes/form_success', { status: 'Cadastro não encontrado.' });
+      }
+      if (subscribe.hasOwnProperty('confirmed_at')) {
+        res.render('subscribes/form_success', { status: 'Cadastro já confirmado.' });
+      } else {
         res.render('subscribes/form', {subscribe: subscribe});
       }
     });
@@ -66,9 +67,15 @@ var SubscribesController = {
     }
     Subscribe.find(query, function (err, subscribes) {
       subscribes.forEach(function (err, subscribe) {
-        subscribe.send_confirmation();
-        subscribe.sended_at = new Date().toISOString();
-        subscribe.save();
+        var s = new Subscribe({
+          name: subscribe.name,
+          email: subscribe.email,
+          phone: subscribe.phone,
+          address: subscribe.address
+        });
+        s.send_confirmation();
+        s.sended_at = new Date().toISOString();
+        s.save();
       });
     });
   }
