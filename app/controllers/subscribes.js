@@ -61,18 +61,17 @@ var SubscribesController = {
   },
   send: function (req, res) {
     var send_mail = require('../mailers/mandrill');
-    var email = req.params['email'];
-    var query = {};
-    if (email) {
-      query.email = email;
-    }
-    Subscribe.find(query, function (err, subscribes) {
+
+    Subscribe.find({}, function (err, subscribes) {
       subscribes.forEach(function (err, subscribe) {
         Subscribe.findOne({email: subscribe.email}, function (err, object) {
-          if(subscribe.hasOwnProperty('sended_at')) {
-            object.send_confirmation();
-            object.sended_at = new Date().toISOString();
-            object.save();
+          if (err) console.log('err', err.stack);
+          if (object) {
+            if(subscribe.hasOwnProperty('sended_at')) {
+              object.send_confirmation();
+              object.sended_at = new Date().toISOString();
+              object.save();
+            }
           }
         });
       });
