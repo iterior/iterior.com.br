@@ -63,14 +63,10 @@ var SubscribesController = {
     Subscribe.find({}, function (err, subscribes) {
       subscribes.forEach(function (subscribe) {
         Subscribe.findOne({email: subscribe.email}, function (err, object) {
-          if (object) {
-            console.log(subscribe.hasOwnProperty('sended_at'));
-            if(!subscribe.hasOwnProperty('sended_at')) {
-              console.log('send mail');
-              // object.send_confirmation();
-              // object.sended_at = new Date().toISOString();
-              // object.save();
-            }
+          if (object && !subscribe.hasOwnProperty('sended_at')) {
+            object.send_confirmation();
+            object.sended_at = new Date().toISOString();
+            object.save();
           }
         });
       });
