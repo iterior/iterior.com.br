@@ -32,7 +32,7 @@ subscribeShema.methods.send_confirmation = function () {
     '</body>',
     '</html>'
   ];
-  return send_mail(this, body.join(''));
+  return send_mail(this, 'Confirmação de Inscrição', body.join(''));
 };
 
 subscribeShema.methods.send_confirmated = function () {
@@ -52,7 +52,7 @@ subscribeShema.methods.send_confirmated = function () {
     '</body>',
     '</html>'
   ];
-  return send_mail(this, body.join(''));
+  return send_mail(this, 'Inscrição Confirmada', body.join(''));
 };
 
 

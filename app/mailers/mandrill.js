@@ -3,7 +3,7 @@ var mandrill_client = require('../settings').mandrill_client;
 var mandrillClient = function (to, body) {
   var message = {
     'html': body,
-    'subject': 'Inscrição confirmada',
+    'subject': subject,
     'from_email': 'noreply@iterior.com.br',
     'from_name': 'iTerior Conference',
     'to': [
