@@ -1,6 +1,6 @@
 var mandrill_client = require('../settings').mandrill_client;
 
-var mandrillClient = function (to, title, body) {
+var mandrillClient = function (to, subject, body) {
   var message = {
     'html': body,
     'subject': subject,
