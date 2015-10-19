@@ -55,7 +55,7 @@ var SubscribesController = {
         });
       });
     });
-  },
+  }/*,
   send: function (req, res) {
     var email = req.params['email'];
     var query = {};
@@ -71,7 +71,7 @@ var SubscribesController = {
         }
       });
     });
-  }
+  }*/
 };
 
 module.exports = SubscribesController;
