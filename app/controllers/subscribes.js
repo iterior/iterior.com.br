@@ -25,7 +25,7 @@ var SubscribesController = {
     Subscribe.findOne({email: email}, function (err, subscribe) {
       if (err) {
          res.render('subscribes/form_success', { status: 'Cadastro não encontrado' });
-       } else if (subscribe.toOjbect().hasOwnProperty('confirmed_at')) {
+       } else if (subscribe.hasOwnProperty('confirmed_at')) {
          res.render('subscribes/form_success', { status: 'Cadastro já confirmado' });
        } else {
         res.render('subscribes/form', {subscribe: subscribe});
