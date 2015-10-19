@@ -17,9 +17,9 @@ var mandrillClient = function (to, subject, body) {
       'iterior.com.br'
     ]
   }
-  mandrill_client.messages.send({'message': message}, function(response) {
+  mandrill_client.messages.send({'message': message}, function (response) {
     console.log(response);
-  }, function(e) {
+  }, function (e) {
     console.log('A Mandrill error occurred: ', e.name, ' - ', e.message);
   });
 };
