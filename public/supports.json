@@ -10,11 +10,5 @@
         "name":  "Cleandev Org",
         "site": "//cleandev.org",
         "avatar": "partners/cleandev-org.png"
-    },
-    {
-        "_id": "coder42",
-        "name":  "coder42",
-        "site": "//coder42.com",
-        "avatar": "partners/coder42.png"
     }
 ]
