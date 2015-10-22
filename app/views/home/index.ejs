@@ -163,7 +163,7 @@
 			</div>
 		</div>
 		<div class="modal-footer">
-			<button type="submit" ng-hide="vm.success" class="modal-action waves-effect waves-green btn-primary btn-flat">Inscrever</button>
+			<button type="submit" ng-hide="vm.status.success || vm.status.duplicate" class="modal-action waves-effect waves-green btn-primary btn-flat">Inscrever</button>
 			<button type="button" class="modal-action waves-effect waves-green btn-flat modal-close">Fechar</button>
 		</div>
 	</form>
