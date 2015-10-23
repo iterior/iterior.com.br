@@ -1,48 +1,48 @@
 [
     {
-	    "_id": "credenciamento",
+        "_id": "credenciamento",
         "title": "Credenciamento",
         "description": "",
         "clock": "08:00",
         "speaker": ""
     },
     {
-	    "_id": "abertura",
+        "_id": "abertura",
         "title": "Abertura",
         "description": "",
         "clock": "09:00",
         "speaker": ""
     },
     {
-	    "_id": "conhecendo-go-lang",
+        "_id": "conhecendo-go-lang",
         "title": "Conhecendo Go! lang",
         "description": "Não vou contar história da linguagem, não vou dizer se ela é melhor ou pior do que a linguagem X, o que vou apresentar é algo bem simples e direto, como funciona e com exemplos. Valores, variáveis, constantes, blocos, estruturas, ponteiros, interfaces, erros, e o que mais der tempo, são 40 minutos cravados!",
         "clock": "09:20",
         "speaker": "daniel-gerep"
     },
     {
-	    "_id": "modelos-de-concorrencia-e-o-mundo-funcional",
+        "_id": "modelos-de-concorrencia-e-o-mundo-funcional",
         "title": "Concorrência em linguagens imperativas e funcionais",
         "description": "Nossos softwares precisam ser mais eficientes, aproveitar melhor os núcleos, lidar com milhares de usuários, terabytes de dados, prever fracasso de hardware e software, etc. O uso de linguagens imperativas nem sempre é a melhor ferramenta para esse trabalho. Nessa palestra vamos fazer uma reflexão sobre concorrência e paralelismo em linguagens imperativas e funcionais e discutir algumas características de linguagens funcionais que a tornam tão eficientes nesse cenário.",
         "clock": "10:00",
         "speaker": "thiago-scalone"
     },
     {
-	    "_id": "angular-js-nas-entrelinhas",
+        "_id": "angular-js-nas-entrelinhas",
         "title": "Angular JS",
         "description": "Um overview sobre a tecnologia que está mudando a forma de escrever front-end.",
         "clock": "10:40",
         "speaker": "alan-soares"
     },
     {
-	    "_id": "aws-com-alta-disponibilidade-e-controle",
+        "_id": "aws-com-alta-disponibilidade-e-controle",
         "title": "AWS com alta disponibilidade e controle",
         "description": "Veremos como configurar seus Auto Scaling Groups de modo a reduzir o tempo de lançamento das instâncias, organizá-los para facilitar o gerenciamento e os deploys, além de algumas dicas práticas que poderão ajudar a diminuir o downtime de suas aplicações.",
         "clock": "11:20",
         "speaker": "paulo-correa"
     },
     {
-	    "_id": "almoco",
+        "_id": "almoco",
         "title": "Almoço",
         "description": "",
         "clock": "12:00",
@@ -56,25 +56,25 @@
         "speaker": "eliezer-pimentel"
     },
     {
-	    "_id": "design-pattern-solid-principios-para-escrever-um-bom-codigo",
+        "_id": "design-pattern-solid-principios-para-escrever-um-bom-codigo",
         "title": "Design Pattern SOLID - Princípios para escrever um bom código",
         "description": "O objetivo da palestra é acrescentar à desenvolvedores de qualquer linguagem noções sobre Padrões de Projeto (Design Patterns) para que possam criar códigos mais objetivos, sem repetição e de fácil manutenção.",
         "clock": "14:00",
         "speaker": "rafael-querino"
     },
     {
-	   "_id": "ios-visao-computacional-cloud-uma-aplicacao-de-alta-disponibilidade",
-        "title": "iOS? Visão Computacional? Cloud? Uma aplicação de alta disponibilidade!",
-        "description": "",
+        "_id": "desenvolvimento-mobile-multipataforma-com-ionic-framework-e-angular-js",
+        "title": "Desenvolvimento Mobile Multiplataforma com Ionic Framework e Angular JS",
+        "description": "Com a popularização do mobile, várias tecnologias de desenvolvimento surgiram no mercado. Vamos falar sobre o Ionic, um framework híbrido de desenvolvimento mobile em HTML5 e AngularJS.",
         "clock": "14:40",
-        "speaker": "henrique-gouveia"
+        "speaker": "jean-orlando"
     },
     {
-	   "_id": "construindo-api-com-laravel",
-        "title": "Construindo Api com Laravel",
-        "description": "Laravel é o framework PHP do momento. Nessa palestra vamos entender o por que de sua rápida popularização desenvolvendo uma API RESTful",
+        "_id": "python-for-genomic-data-science",
+        "title": "Python for Genomic Data Science",
+        "description": "Genômica; Biologia Celular; Análise de dados Genômicos com Python.",
         "clock": "15:20",
-        "speaker": "flavio-ferreira"
+        "speaker": "carlos-roland"
     },
     {
         "_id": "coffeebreak",
@@ -84,21 +84,21 @@
         "speaker": ""
     },
     {
-	    "_id": "desenvolvimento-mobile-multipataforma-com-ionic-framework-e-angular-js",
-        "title": "Desenvolvimento Mobile Multiplataforma com Ionic Framework e Angular JS",
-        "description": "Com a popularização do mobile, várias tecnologias de desenvolvimento surgiram no mercado. Vamos falar sobre o Ionic, um framework híbrido de desenvolvimento mobile em HTML5 e AngularJS.",
+       "_id": "construindo-api-com-laravel",
+        "title": "Construindo Api com Laravel",
+        "description": "Laravel é o framework PHP do momento. Nessa palestra vamos entender o por que de sua rápida popularização desenvolvendo uma API RESTful",
         "clock": "16:40",
-        "speaker": "jean-orlando"
+        "speaker": "flavio-ferreira"
     },
     {
-	    "_id": "python-for-genomic-data-science",
-        "title": "Python for Genomic Data Science",
-        "description": "Genômica; Biologia Celular; Análise de dados Genômicos com Python.",
+       "_id": "ios-visao-computacional-cloud-uma-aplicacao-de-alta-disponibilidade",
+        "title": "iOS? Visão Computacional? Cloud? Uma aplicação de alta disponibilidade!",
+        "description": "",
         "clock": "17:20",
-        "speaker": "carlos-roland"
+        "speaker": "henrique-gouveia"
     },
     {
-	    "_id": "encerramento",
+        "_id": "encerramento",
         "title": "Encerramento",
         "description": "Encerramento e sorteio de brindes.",
         "clock": "18:00",
