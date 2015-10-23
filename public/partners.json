@@ -1,10 +1,4 @@
 [
-    /*{
-        "_id": "fasternet",
-        "name":  "FasterNet",
-        "site": "//fasternet.com.br",
-        "avatar": "partners/fasternet.png"
-    },*/
     {
         "_id": "cloudwalk",
         "name":  "CloudWalk",
@@ -12,3 +6,12 @@
         "avatar": "partners/cloudwalk.png"
     }
 ]
+
+/*
+    {
+        "_id": "fasternet",
+        "name":  "FasterNet",
+        "site": "//fasternet.com.br",
+        "avatar": "partners/fasternet.png"
+    },
+*/
