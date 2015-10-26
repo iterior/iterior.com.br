@@ -82,7 +82,7 @@
 			<h2 class="center-align">Patrocinadores</h2>
 			<div class="container">
 				<div class="partner-list row">
-					<div id="partner-{{ ::partner._id }}" class="partner-item" ng-repeat="partner in vm.partners">
+					<div id="partner-{{ ::partner._id }}" class="partner-item col s12 m6 l3" ng-repeat="partner in vm.partners">
 						<div class="l-box">
 							<a href="{{ ::partner.site }}" target="_blank" title="{{ ::partner.name }}" class="grey-text grey-darken-2-text">
 								<img src="/assets/img/{{::partner.avatar}}" alt="{{ ::partner.name }}" class="responsive-img">
