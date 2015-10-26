@@ -3,12 +3,14 @@
         "_id": "cloudwalk",
         "name":  "CloudWalk",
         "site": "//cloudwalk.io",
-        "avatar": "partners/cloudwalk.png"
+        "avatar": "partners/cloudwalk.png",
+        "order": 2
     },
     {
         "_id": "fasternet",
         "name":  "FasterNet",
         "site": "//fasternet.com.br",
-        "avatar": "partners/fasternet.png"
+        "avatar": "partners/fasternet.png",
+        "order": 1
     }
 ]
