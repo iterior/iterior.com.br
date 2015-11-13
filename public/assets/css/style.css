@@ -77,6 +77,12 @@ h3 {
 .talk-list .talk-item .talk-item-container {
     border-left: 2px solid #e91e63;
 }
+.partner-list .partner-item {
+    vertical-align: middle;
+}
+.partner-list img {
+    max-height: 100px !important;
+}
 @media screen and (max-width: 600px) {
     #Home {
         background-size: 100% auto;

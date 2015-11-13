@@ -7,7 +7,7 @@
 		<li><a href="#talks" title="Programação">Programação</a></li>
 		<li><a href="#locale" title="Local">Local</a></li>
 		<li><a href="#partners" title="Patrocinadores">Patrocinadores</a></li>
-		<li class="pink white-text"><a href="#modal-subscribe" class="subscribe-form pink white-text" title="Inscreva-se">Inscreva-se</a></li>
+		<li class="pink white-text hide"><a href="#modal-subscribe" class="subscribe-form pink white-text" title="Inscreva-se">Inscreva-se</a></li>
 	</ul>
 	<ul class="nav-right">
 		<li>
@@ -27,8 +27,8 @@
 <section id="home" class="valign-wrapper center-align section">
 	<div id="subscribe" class="valign">
 		<h2>14 de Novembro</h2>
-		<a href="#modal-subscribe" title="Inscreva-se" class="subscribe-form waves-effect waves-light btn btn-primary btn-large pink">Inscreva-se</a>
-		<p>* Vagas limitadas</p>
+		<a href="#modal-subscribe" title="Inscreva-se" class="subscribe-form waves-effect waves-light btn btn-primary btn-large pink hide">Inscreva-se</a>
+		<p>Inscrições encerradas. Até o grande dia, amigo!</p>
 	</div>
 </section>
 
@@ -82,7 +82,7 @@
 			<h2 class="center-align">Patrocinadores</h2>
 			<div class="container">
 				<div class="partner-list row">
-					<div id="partner-{{ ::partner._id }}" class="partner-item col s12 m6 l3" ng-repeat="partner in vm.partners | orderBy:'order'">
+					<div id="partner-{{ ::partner._id }}" class="partner-item col s6 m3 l2" ng-repeat="partner in vm.partners | orderBy:'order'">
 						<div class="l-box">
 							<a href="{{ ::partner.site }}" target="_blank" title="{{ ::partner.name }}" class="grey-text grey-darken-2-text">
 								<img src="/assets/img/{{::partner.avatar}}" alt="{{ ::partner.name }}" class="responsive-img">
