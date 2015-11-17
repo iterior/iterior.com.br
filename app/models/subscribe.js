@@ -67,7 +67,7 @@ subscribeSchema.methods.send_feedback = function () {
     '    <p>Queremos melhorar e sua avaliação é primordial. Abaixo você encontra um link para avaliar o evento e nos ajudar a ser melhores.</p>',
     '    <p>Mesmo que você não tenha comparecido pode nos ajudar oferencendo ideias para o próximo ;).</p>',
     '    <br>',
-    '    <a href="http://iterior.com.br/feedback" title="Feedback iterior.com.br">Avaliar</a>',
+    '    <a href="http://iterior.com.br/feedback" target="_blank" title="Feedback iterior.com.br">Avaliar</a>',
     '    <br>',
     '    --',
     '    <p>Equipe iTerior</p>',

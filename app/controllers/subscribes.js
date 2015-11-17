@@ -28,7 +28,7 @@ var SubscribesController = {
       if (err) {
         res.render('subscribes/form_success', { status: 'Cadastro não encontrado.' });
       }
-      if (subscribe.toObject().hasOwnProperty('confirmed_at')) {
+      if (subscribe.confirmed_at) {
         res.render('subscribes/form_success', { status: 'Cadastro já confirmado.' });
       } else {
         res.render('subscribes/form', {subscribe: subscribe});
@@ -53,9 +53,17 @@ var SubscribesController = {
       }
 
       subscribe.save(function (err, data) {
+        subscribe.send_confirmated();
         res.render(template_name, {
           status: 'Cadastro atualizado com sucesso!', subscribe: data
         });
+      });
+    });
+  },
+  sendFeedback: function (req, res) {
+    Subscribe.find({}, function (err, subscribes) {
+      subscribes.forEach(function (subscribe) {
+        subscribe.send_feedback();
       });
     });
   }
