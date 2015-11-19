@@ -28,10 +28,10 @@
         "order": 3
     },
     {
-        "_id": "fc-moreno",
-        "name":  "FC Moreno",
-        "site": "//fcmoreno.com.br",
+        "_id": "polo-francano-ti",
+        "name":  "Polo Francano Ti",
+        "site": "//polofrancanoti.com.br/",
         "avatar": "partners/polo-ti.jpg",
-        "order": 3
+        "order": 5
     }
 ]
