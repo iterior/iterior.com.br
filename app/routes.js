@@ -10,4 +10,8 @@ router.get('/subscribes/send-feedback', subscribe.sendFeedback);
 router.get('/subscribes/:email', subscribe.edit);
 router.post('/subscribes/:email', subscribe.update);
 
+router.get('/api/talks', function (req, res) {
+  res.json(require('../public/talks'));
+})
+
 module.exports = router;
