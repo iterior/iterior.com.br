@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: true })); // to enconded bodies
 app.use(router);
 
 // process.env.PORT lets the port be set by Heroku
-const port = (process.env.PORT || 3000);
+const port = (process.env.PORT || 8080);
 
 app.listen(port, () => {
   console.log('Listening on : http://0.0.0.0:' + port);
