@@ -1,7 +1,7 @@
-var mongoose = require('../settings').db;
-var send_mail = require('../mailers/mandrill');
+const mongoose = require('../settings').db;
+const send_mail = require('../mailers/mandrill');
 
-var subscribeSchema = mongoose.Schema({
+const subscribeSchema = mongoose.Schema({
   name: String,
   email: { type: String, unique: true },
   phone: String,
@@ -13,7 +13,7 @@ var subscribeSchema = mongoose.Schema({
 });
 
 subscribeSchema.methods.send_confirmation = function () {
-  var body = [
+  const body = [
     '<html>',
     '<head>',
     '<meta charset="utf-8">',
@@ -36,7 +36,7 @@ subscribeSchema.methods.send_confirmation = function () {
 };
 
 subscribeSchema.methods.send_confirmated = function () {
-  var body = [
+  const body = [
     '<html>',
     '<head>',
     '<meta charset="utf-8">',
@@ -56,7 +56,7 @@ subscribeSchema.methods.send_confirmated = function () {
 };
 
 subscribeSchema.methods.send_feedback = function () {
-  var body = [
+  const body = [
     '<html>',
     '<head>',
     '<meta charset="utf-8">',

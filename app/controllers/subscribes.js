@@ -1,17 +1,15 @@
-var Subscribe = require('../models/subscribe');
-var Subscribe = require('../models/subscribe');
+const Subscribe = require('../models/subscribe');
 
-
-var SubscribesController = {
-  create: function (req, res) {
-    var data = req.body;
-    var subscribe = new Subscribe({
+const SubscribesController = {
+  create: (req, res) => {
+    const data = req.body;
+    const subscribe = new Subscribe({
       name: data.name,
       email: data.email,
       phone: data.phone,
       address: data.address,
       created_at: new Date().toISOString()
-    }).save(function (err, object) {
+    }).save((err, object) => {
       if (err) res.json(err.toJSON());
 
       if (object) {
@@ -22,9 +20,9 @@ var SubscribesController = {
       };
     });
   },
-  edit: function (req, res) {
-    var email = req.params['email'];
-    Subscribe.findOne({email: email}, function (err, subscribe) {
+  edit: (req, res) => {
+    const email = req.params['email'];
+    Subscribe.findOne({email: email}, (err, subscribe) => {
       if (err) {
         res.render('subscribes/form_success', { status: 'Cadastro não encontrado.' });
       }
@@ -35,12 +33,12 @@ var SubscribesController = {
       }
     });
   },
-  update: function (req, res) {
-    var email = req.params['email'];
-    var company = req.body.company;
-    var template_name = 'subscribes/form_success';
+  update: (req, res) => {
+    const email = req.params['email'];
+    const company = req.body.company;
+    const template_name = 'subscribes/form_success';
 
-    Subscribe.findOne({email: email}, function (err, subscribe) {
+    Subscribe.findOne({email: email}, (err, subscribe) => {
       if (err) {
         res.render(template_name, {
           status: 'Cadastro não encontrado.'
@@ -52,7 +50,7 @@ var SubscribesController = {
         subscribe.confirmed_at = new Date().toISOString();
       }
 
-      subscribe.save(function (err, data) {
+      subscribe.save((err, data) => {
         subscribe.send_confirmated();
         res.render(template_name, {
           status: 'Cadastro atualizado com sucesso!', subscribe: data
@@ -60,9 +58,9 @@ var SubscribesController = {
       });
     });
   },
-  sendFeedback: function (req, res) {
-    Subscribe.find({}, function (err, subscribes) {
-      subscribes.forEach(function (subscribe) {
+  sendFeedback: (req, res) => {
+    Subscribe.find({}, (err, subscribes) => {
+      subscribes.forEach((subscribe) => {
         subscribe.send_feedback();
       });
     });

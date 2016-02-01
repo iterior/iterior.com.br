@@ -1,8 +1,8 @@
-var HomeController = {
-  index: function (req, res) {
+const HomeController = {
+  index: (req, res) => {
     res.render('home/index');
   },
-  feedback: function (req, res) {
+  feedback: (req, res) => {
     res.render('home/feedback');
   }
 };

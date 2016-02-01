@@ -1,7 +1,7 @@
-var mandrill_client = require('../settings').mandrill_client;
+const mandrill_client = require('../settings').mandrill_client;
 
-var mandrillClient = function (to, subject, body) {
-  var message = {
+const mandrillClient = (to, subject, body) => {
+  const message = {
     'html': body,
     'subject': subject,
     'from_email': 'noreply@iterior.com.br',
@@ -17,9 +17,9 @@ var mandrillClient = function (to, subject, body) {
       'iterior.com.br'
     ]
   }
-  mandrill_client.messages.send({'message': message}, function (response) {
+  mandrill_client.messages.send({'message': message}, (response) => {
     console.log(response);
-  }, function (e) {
+  }, (e) => {
     console.log('A Mandrill error occurred: ', e.name, ' - ', e.message);
   });
 };

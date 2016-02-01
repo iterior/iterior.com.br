@@ -1,11 +1,11 @@
-var express = require('express');
-var bodyParser = require('body-parser');
-var path = require('path');
-var settings = require('./app/settings');
+const express = require('express');
+const bodyParser = require('body-parser');
+const path = require('path');
+const settings = require('./app/settings');
 
-var app = express();
+const app = express();
 
-var router = require(settings.ROUTES_ROOT || './app/routes');
+const router = require(settings.ROUTES_ROOT || './app/routes');
 
 // set views path
 app.set('views', (settings.VIEWS_PATH || './app/views'));
@@ -22,8 +22,8 @@ app.use(bodyParser.urlencoded({ extended: true })); // to enconded bodies
 app.use(router);
 
 // process.env.PORT lets the port be set by Heroku
-var port = (process.env.PORT || 8080);
+const port = (process.env.PORT || 3000);
 
-app.listen(port, function () {
+app.listen(port, () => {
   console.log('Listening on : http://0.0.0.0:' + port);
 });

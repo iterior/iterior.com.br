@@ -1,6 +1,6 @@
-var path = require('path');
-var mongoose = require('mongoose');
-var mandrill = require('mandrill-api/mandrill');
+const path = require('path');
+const mongoose = require('mongoose');
+const mandrill = require('mandrill-api/mandrill');
 
 SECRET_KEY = 'y0g7#ucnls-vz)x%oybdjw#9m006w!i&hjt#fm=+zkf)&&ceg@';
 
