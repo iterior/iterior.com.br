@@ -1,0 +1,342 @@
+@import 'https://fonts.googleapis.com/css?family=Baloo+Paaji';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,800';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;]
+    vertical-align: middle;
+    transition: all 0.2s ease-in-out;
+}
+
+main {
+    height: 100%;
+}
+
+h2, h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 3em;
+    color: #222;
+}
+
+h3 {
+    font-size: 7vw;
+    text-transform:uppercase;
+}
+a {
+    text-decoration: none;
+}
+
+.button {
+    background-color:#44c767;
+    /*-moz-border-radius:28px;
+    -webkit-border-radius:28px;
+    border-radius:28px;*/
+    border:1px solid #18ab29;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:18px;
+    font-weight:700;
+    padding:16px 15px;
+    text-decoration:none;
+}
+.button:hover {
+    background-color:#5cbf2a;
+}
+.button:active {
+    position:relative;
+    top:1px;
+}
+
+.social-link {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    text-indent: -999em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.social-link.--facebook {
+    background-image: url(../img/facebook.png);
+}
+.social-link.--twitter {
+    background-image: url(../img/twitter.png);
+}
+.social-link.--instagram {
+    background-image: url(../img/instagram.png);
+}
+.social-link.--github {
+    background-image: url(../img/github.png);
+}
+.social-link.--linkedin {
+    background-image: url(../img/linkedin.png);
+}
+
+.boxes {
+    text-align: center;
+}
+.boxes .box {
+    text-align: left;
+}
+.boxes .box {
+    overflow: hidden;
+    display: inline-block;
+    width: calc(33.333% - 50px);
+    margin-right: 20px;
+    margin-bottom: 35px;
+    margin-left: 20px;
+    vertical-align: top;
+}
+
+@media only screen and (max-width: 769px) {
+    .boxes .box {
+        width: calc(50% - 40px);
+    }
+}
+@media only screen and (max-width: 643px) {
+    .boxes .box {
+        width: 100%;
+    }
+}
+
+.boxes .box .--picture {
+    width: 100%;
+}
+.boxes .box .--name {
+    font-size: 1.4em;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.boxes .box .--social-links {
+    margin: 5px 0;
+}
+.boxes .box .social-link {
+    width: 22px;
+    height: 22px;
+}
+
+header.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 10px 20px;
+}
+header.header .logo {
+    float: left;
+    padding-top:6px;
+}
+header.header .logo img {
+    width: 210px;
+}
+header.header .mobile-button {
+    display:none;
+    float:right;
+    background-color:transparent;
+    border:none;
+    width:45px;
+    padding:5px;
+    margin: 20px;
+    margin-right:0;
+    outline:none;
+    cursor:pointer;
+}
+header.header .mobile-button span.bar {
+    display:block;
+    width:100%;
+    background-color:#000;
+    height:4px;
+    margin:2px 0;
+}
+header.header .mobile-button.--close {
+    display:none;
+    position: absolute;
+    top:0;
+    right:20px;
+    z-index:100;
+}
+header.header .mobile-button.--close span.bar {
+    position:absolute;
+    width:30px;
+}
+header.header .mobile-button.--close span.bar:first-child {
+    transform: rotate(45deg);
+}
+header.header .mobile-button.--close span.bar:last-child {
+    transform: rotate(-45deg);
+}
+header.header nav {
+    float: right;
+}
+header.header nav.--open {
+    display:block;
+    float: none;
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color:#fff;
+    padding:40px 40px 0;
+    text-align:center;
+}
+header.header nav.--open a {
+    display:block;
+    font-size:1em;
+}
+header.header nav.--open a.social-link {
+    display:inline-block;
+}
+header.header nav a {
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    color: #666;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 24px 5px;
+    font-style: italic;
+}
+header.header nav a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 769px) {
+    header.header .mobile-button {
+        display: inline-block;
+    }
+    header.header .mobile-button.--close {
+        display: block;
+    }
+
+    header.header nav {
+        display: none;
+    }
+}
+
+nav.user-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -200px;
+}
+nav.user-nav .button {
+    float: left;
+    text-transform: uppercase;
+    font-style: italic;
+}
+nav.user-nav .button.--buy {
+    color:rgba(0,0,0, 0.5);
+}
+nav.user-nav .button.--subscribe {
+    background-color:#000;
+    border-color:#000;
+}
+
+section {
+    padding: 140px 50px;
+}
+section .section-info {
+    margin-bottom: 20px;
+}
+section header {
+    margin-bottom: 80px;
+    text-align: right;
+    font-style: italic;
+}
+
+section.home {
+    display: block;
+    background-image: url(../img/countdown-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-style: italic;
+    padding-top: 150px;
+    padding-bottom: 130px;
+}
+section.home img {
+    max-width: 100%;
+}
+section.home h2 {
+    color: #fff;
+    font-family: 'Baloo Paaji', coursive;
+    font-size: 8.5vw;
+    line-height: 9vw;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+section.home h2 .block {
+    display: block;
+}
+span.date {
+    font-weight: lighter;
+    font-size: 1.5em;
+}
+
+section.local .local-info {
+    padding-bottom: 30px;
+}
+section.local .local-name {
+    font-size: 1em;
+}
+section.local .address {
+    font-size: 1.5em;
+}
+section.local .city {
+    font-size: 2em;
+}
+section.subscribe {
+    display: none;
+}
+
+.managers {}
+.managers h3 {
+    text-align: left;
+}
+.managers .boxes .box {
+    width: calc(25% - 50px);
+}
+
+.speakers {}
+.speakers .box.--future-speaker {
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+.talks {}
+.talks .talk {
+    border: 1px solid rgba(0,0,0,0.3);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.talks .talk span {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+.talks .talk .hour {
+    color: #ed334f;
+}
+.talks .talk h3 {
+    font-size: 3vh;
+    font-style:italic;
+    margin: 10px 0;
+}
+

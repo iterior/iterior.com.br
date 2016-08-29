@@ -1,3 +1,3 @@
-# iTerior
+# ITerior Conference 2016
 
-iTerior Conference 2015
+2016 version
