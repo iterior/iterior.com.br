@@ -294,6 +294,7 @@ span.date {
     font-size: 1.5em;
 }
 
+section.local {}
 section.local .local-info {
     padding-bottom: 30px;
 }
@@ -305,6 +306,12 @@ section.local .address {
 }
 section.local .city {
     font-size: 2em;
+}
+
+@media only screen and (max-width: 769px) {
+    section.local .map {
+        display: none;
+    }
 }
 section.subscribe {
     display: none;
