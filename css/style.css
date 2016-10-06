@@ -40,6 +40,11 @@ a {
     text-decoration: none;
 }
 
+/* helpers */
+.--line-through {
+  text-decoration: line-through;
+}
+
 .button {
     background-color:#44c767;
     /*-moz-border-radius:28px;
@@ -339,12 +344,13 @@ section.subscribe {
     box-shadow: 0 0 1px rgba(0,0,0,0.3);
     -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.3);
 }
-.talks .talk span {
+.talks .talk span.--hour,
+.talks .talk span.--speaker {
     display: inline-block;
     font-weight: 700;
     font-size: 1.2em;
 }
-.talks .talk .hour {
+.talks .talk .--hour {
     color: #ed334f;
 }
 .talks .talk h3 {
