@@ -1,0 +1,29 @@
+{
+  "name": "iterior.com.br",
+  "version": "1.0.0",
+  "description": "2016 version",
+  "main": "server.js",
+  "engines": {
+    "node": "10.15.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "live-server",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iterior/iterior.com.br.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iterior/iterior.com.br/issues"
+  },
+  "homepage": "https://github.com/iterior/iterior.com.br#readme",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "serve-handler": "^5.0.8"
+  }
+}
